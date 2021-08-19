@@ -2,4 +2,21 @@
 
 .app-wrapper {
   color: $turquoise;
+
+  .button {
+    background-color: transparent;
+    border: 1px solid $turquoise;
+    color: $turquoise;
+    font-family: RobotoMono;
+    cursor: pointer;
+    padding: 0 15px;
+    height: 30px;
+    &:hover {
+      opacity: 0.9;
+    }
+    &.fill {
+      background-color: $turquoise;
+      color: $dark-blue;
+    }
+  }
 }
