@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.18",
+    "@types/react-dom": "^17.0.9",
     "@types/react-lottie": "^1.2.6"
   }
 }

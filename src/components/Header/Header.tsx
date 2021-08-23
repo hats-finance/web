@@ -4,7 +4,7 @@ import LogoIcon from "../../assets/icons/logo.icon";
 import MenuIcon from "../../assets/icons/menu.icon";
 import { LayoutContext } from '../../App';
 import { useContext } from 'react';
-import { ScreenSize } from '../../constants/constants';
+import { DAPP_LINK, ScreenSize } from '../../constants/constants';
 
 export default function Header() {
   const { t } = useTranslation();
@@ -21,10 +21,10 @@ export default function Header() {
       {
         screenSize === ScreenSize.Desktop ?
           <div className="links-wrapper">
-            {/* <div>{t("Whitepaper")}</div>
-            <div>{t("FAQ")}</div> */}
+            <a>{t("Whitepaper")}</a>
+            <a>{t("FAQ")}</a>
             <button className="button create-vault-btn">{t("Create Vault")}</button>
-            <button className="button fill">{t("App")}</button>
+            <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button fill">{t("App")}</button>
           </div> : <MenuIcon />
       }
     </div>

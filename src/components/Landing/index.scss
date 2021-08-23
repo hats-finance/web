@@ -2,6 +2,9 @@
 
 .landing-wrapper {
   padding-top: $header-height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .title {
     color: $white;
     font-size: $medium;
@@ -47,7 +50,6 @@
     }
   }
 
-  
   .features-wrapper {
     display: flex;
     flex-direction: column;
@@ -80,6 +82,22 @@
   }
 }
 
+.social-wrapper {
+  width: 100%;
+  max-width: $element-max-width;
+  padding: 0 $element-padding;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  img {
+    margin-right: 25px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .welcome-wrapper {
@@ -112,8 +130,15 @@
       .features-content {
         .features-icons-wrapper {
           flex-direction: column;
+          .feature {
+            margin-bottom: 50px;
+          }
         }
       }
     }
+  }
+
+  .social-wrapper {
+    align-items: center;
   }
 }

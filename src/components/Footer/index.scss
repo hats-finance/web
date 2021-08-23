@@ -1,0 +1,25 @@
+@import "../../constants/constants.scss";
+
+.footer-wrapper {
+  width: 100%;
+  max-width: $element-max-width;
+  padding: 0 $element-padding;
+  height: $footer-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo-wrapper {
+    display: flex;
+    color: $white;
+    letter-spacing: 3px;
+    align-items: baseline;
+    span {
+      margin-left: 10px;
+    }
+  }
+  .links-wrapper {
+    a {
+      margin: 0 25px;
+    }
+  }
+}

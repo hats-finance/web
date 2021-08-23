@@ -19,4 +19,11 @@
       color: $dark-blue;
     }
   }
+
+  a {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 }

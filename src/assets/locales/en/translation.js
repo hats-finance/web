@@ -11,5 +11,9 @@ export const translationEN = {
   "#Permissionless": "#Permissionless",
   "#Anonymous": "#Anonymous",
   "Happy hunting": "Happy hunting",
-  "Master Shredder hacker?": "Master Shredder hacker?"
+  "Master Shredder hacker?": "Master Shredder hacker?",
+  "Stay connected": "Stay connected",
+  "Overview": "Overview",
+  "Term of use": "Term of use",
+  "Privacy Policy": "Privacy Policy"
 }
