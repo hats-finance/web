@@ -13,9 +13,9 @@ export default function Footer() {
         <span>Hats</span>
       </div>
       <div className="links-wrapper">
-        <a>{t("Overview")}</a>
-        <a>{t("Term of use")}</a>
-        <a>{t("Privacy Policy")}</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Overview")}</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Term of use")}</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Privacy Policy")}</a>
       </div>
     </div>
   )

@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
   .logo-wrapper {
     display: flex;
     color: $white;
@@ -20,6 +21,8 @@
   .links-wrapper {
     a {
       margin: 0 25px;
+      text-decoration: none;
+      color: $turquoise;
     }
   }
 }

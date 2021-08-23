@@ -3,6 +3,7 @@ import FaceIcon from '../../assets/icons/face.icon';
 import LockIcon from '../../assets/icons/lock.icon';
 import CubesIcon from '../../assets/icons/cubes.icon';
 import { useTranslation } from 'react-i18next';
+import { DAPP_LINK } from '../../constants/constants';
 
 export default function Info() {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ export default function Info() {
         <div className="text-wrapper">
           <span className="title">{t("Become a protector")}</span>
           <span className="text">{t("Protector explained")}</span>
-          <button className="button deposit-claim-btn">{t("Deposite and claim Hats")}</button>
+          <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button deposit-claim-btn">{t("Deposite and claim Hats")}</button>
         </div>
       </section>
       <section className="features-wrapper">

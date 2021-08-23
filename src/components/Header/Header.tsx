@@ -1,15 +1,22 @@
 import './index.scss';
 import { useTranslation } from 'react-i18next';
 import LogoIcon from "../../assets/icons/logo.icon";
-import MenuIcon from "../../assets/icons/menu.icon";
 import { LayoutContext } from '../../App';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { DAPP_LINK, ScreenSize } from '../../constants/constants';
+import Menu from "./Menu";
 
 export default function Header() {
   const { t } = useTranslation();
   const { screenSize } = useContext(LayoutContext);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
+  const links = <div className="links-wrapper">
+    <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Whitepaper")}</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("FAQ")}</a>
+    <button className="button create-vault-btn">{t("Create Vault")}</button>
+    <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button fill">{t("App")}</button>
+  </div>
 
   return (
     <div className="header-wrapper">
@@ -17,16 +24,8 @@ export default function Header() {
         <LogoIcon />
         <span>Hats</span>
       </div>
-
-      {
-        screenSize === ScreenSize.Desktop ?
-          <div className="links-wrapper">
-            <a>{t("Whitepaper")}</a>
-            <a>{t("FAQ")}</a>
-            <button className="button create-vault-btn">{t("Create Vault")}</button>
-            <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button fill">{t("App")}</button>
-          </div> : <MenuIcon />
-      }
+      {screenSize === ScreenSize.Desktop ? links : <img src={require("../../assets/icons/menu.svg").default} onClick={() => setToggleMenu(!toggleMenu)} alt="menu" />}
+      {toggleMenu && <Menu>{links}</Menu>}
     </div>
   )
 }
