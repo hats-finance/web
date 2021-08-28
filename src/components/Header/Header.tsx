@@ -12,9 +12,9 @@ export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const links = <div className="links-wrapper">
-    <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Whitepaper")}</a>
+    {/* <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Whitepaper")}</a> */}
     <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("FAQ")}</a>
-    <button className="button create-vault-btn">{t("Create Vault")}</button>
+    {/* <button className="button create-vault-btn">{t("Create Vault")}</button> */}
     <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button fill">{t("App")}</button>
   </div>
 

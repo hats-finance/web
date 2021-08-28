@@ -82,6 +82,25 @@
   }
 }
 
+.nfts-wrapper {
+  max-width: $element-max-width;
+  padding: 0 $element-padding;
+  width: 100%;
+  box-sizing: border-box;
+  video {
+    margin: 20px;
+  }
+  video:first-child {
+    margin-left: unset;
+  }
+  video:last-child {
+    margin-right: unset;
+  }
+  .swiper-slide {
+    max-width: 200px;
+  }
+}
+
 .social-wrapper {
   width: 100%;
   max-width: $element-max-width;
@@ -142,6 +161,12 @@
     }
     section {
       margin: 50px 0;
+    }
+  }
+
+  .nfts-wrapper {
+    video {
+      margin: unset;
     }
   }
 

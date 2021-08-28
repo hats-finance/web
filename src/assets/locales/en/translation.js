@@ -15,5 +15,7 @@ export const translationEN = {
   "Stay connected": "Stay connected",
   "Overview": "Overview",
   "Term of use": "Term of use",
-  "Privacy Policy": "Privacy Policy"
+  "Privacy Policy": "Privacy Policy",
+  "NFTs": "NFTs",
+  "Launch app": "Launch app"
 }

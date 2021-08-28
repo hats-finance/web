@@ -1,18 +1,22 @@
 
+import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import Lottie from "react-lottie";
+import { LayoutContext } from "../../App";
 import landingTextAnimation from "../../assets/lotties/landing-text.json";
-import { MASTER_SHREDDER_HACKER_LINK } from "../../constants/constants";
+import landingTextAnimationMobile from "../../assets/lotties/landing-text-mobile.json";
+import { MASTER_SHREDDER_HACKER_LINK, ScreenSize } from "../../constants/constants";
 import './index.scss';
 
 
 export default function Welcome() {
   const { t } = useTranslation();
+  const { screenSize } = useContext(LayoutContext);
 
   const defaultLottieOptions = {
     loop: false,
     autoplay: true,
-    animationData: landingTextAnimation,
+    animationData: screenSize === ScreenSize.Desktop ? landingTextAnimation : landingTextAnimationMobile,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }
@@ -22,7 +26,7 @@ export default function Welcome() {
     <div className="welcome-wrapper">
       <Lottie options={defaultLottieOptions} />
       <div className="buttons-wrapper">
-        <button className="button fill">{t("Happy hunting")}</button>
+        <button className="button fill">{screenSize === ScreenSize.Desktop ? t("Happy hunting") : t("Launch app")}</button>
         <button onClick={() => window.open(MASTER_SHREDDER_HACKER_LINK, '_blank')} className="button">{t("Master Shredder hacker?")}</button>
       </div>
     </div>
