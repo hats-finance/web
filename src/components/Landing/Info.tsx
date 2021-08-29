@@ -3,7 +3,7 @@ import FaceIcon from '../../assets/icons/face.icon';
 import LockIcon from '../../assets/icons/lock.icon';
 import CubesIcon from '../../assets/icons/cubes.icon';
 import { useTranslation } from 'react-i18next';
-import { DAPP_LINK } from '../../constants/constants';
+import { DAPP_LINK, GET_IN_TOUCH, GIT_BOOK } from '../../constants/constants';
 
 export default function Info() {
   const { t } = useTranslation();
@@ -35,8 +35,16 @@ export default function Info() {
             </div>
           </div>
         </div>
+        <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Learn more")}</a>
       </section>
-
+      <section className="protocol-wrapper">
+        <img className="protocol-icon" src={require("../../assets/icons/protocol.svg").default} alt="protocol" />
+        <div className="text-wrapper">
+          <span className="title">{t("Protect my protocol")}</span>
+          <span className="text">{t("Protocol explained")}</span>
+          <button onClick={() => window.open(GET_IN_TOUCH, '_blank')} className="button deposit-claim-btn">{t("Get in touch")}</button>
+        </div>
+      </section>
     </div>
   )
 }

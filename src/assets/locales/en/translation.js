@@ -17,5 +17,10 @@ export const translationEN = {
   "Term of use": "Term of use",
   "Privacy Policy": "Privacy Policy",
   "NFTs": "NFTs",
-  "Launch app": "Launch app"
+  "Launch app": "Launch app",
+  "Docs": "Docs",
+  "Learn more": "Learn more",
+  "Protect my protocol": "PROTECT MY PROTOCOL",
+  "Protocol explained": "We allow any project to protect their smart contracts via a HATs security vault. While this is a manual process at the moment, in the future it will be fully autonomous and governance controlled.",
+  "Get in touch": "Get in touch"
 }

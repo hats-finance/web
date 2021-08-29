@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import LogoIcon from '../../assets/icons/logo.icon';
+import { GIT_BOOK } from '../../constants/constants';
 import './index.scss';
 
 
@@ -13,9 +14,9 @@ export default function Footer() {
         <span>Hats</span>
       </div>
       <div className="links-wrapper">
-        <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Overview")}</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Term of use")}</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Privacy Policy")}</a>
+        <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Overview")}</a>
+        <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Term of use")}</a>
+        {/* <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Privacy Policy")}</a> */}
       </div>
     </div>
   )

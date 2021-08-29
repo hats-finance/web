@@ -35,11 +35,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  .protocol-wrapper,
   .protector-wrapper {
     display: flex;
     align-items: center;
     padding: 0 $element-padding;
     max-width: $element-max-width;
+    .protocol-icon,
     .protector-icon {
       width: 200px;
       margin-right: 100px;
@@ -47,6 +50,7 @@
     .text-wrapper {
       display: flex;
       flex-direction: column;
+      max-width: 500px;
       .deposit-claim-btn {
         width: 250px;
         margin-top: 30px;
@@ -80,7 +84,12 @@
         }
       }
     }
+    a {
+      color: $turquoise;
+      margin-top: 50px;
+    }
   }
+
   section {
     margin: 100px 0;
   }
@@ -91,15 +100,24 @@
   padding: 0 $element-padding;
   width: 100%;
   box-sizing: border-box;
+  .nfts-container {
+    display: flex;
+    justify-content: space-between;
+    .nft-card {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
   video {
-    margin: 20px;
+    margin: 0 20px;
   }
-  video:first-child {
-    margin-left: unset;
-  }
-  video:last-child {
-    margin-right: unset;
-  }
+  // video:first-child {
+  //   margin-left: unset;
+  // }
+  // video:last-child {
+  //   margin-right: unset;
+  // }
   .swiper-slide {
     max-width: 200px;
   }
@@ -110,10 +128,15 @@
   max-width: $element-max-width;
   padding: 0 $element-padding;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
   margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+  .sub-title {
+    color: $white;
+    margin-right: 100px;
+  }
   img {
     margin-right: 25px;
     cursor: pointer;
@@ -139,9 +162,11 @@
   }
 
   .info-wrapper {
+    .protocol-wrapper,
     .protector-wrapper {
       flex-direction: column;
       align-items: flex-start;
+      .protocol-icon,
       .protector-icon {
         width: 50px;
         margin-right: 0;
@@ -162,6 +187,9 @@
           }
         }
       }
+      a {
+        margin-top: unset;
+      }
     }
     section {
       margin: 50px 0;
@@ -175,7 +203,11 @@
   }
 
   .social-wrapper {
-    align-items: center;
+    //align-items: center;
+    flex-direction: column;
+    .sub-title {
+      margin-bottom: 10px;
+    }
     img {
       margin-right: 10px;
     }

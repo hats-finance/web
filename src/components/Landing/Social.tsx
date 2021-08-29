@@ -1,17 +1,17 @@
 import './index.scss';
 import { useTranslation } from "react-i18next";
-import { ScreenSize, SocialLinks } from '../../constants/constants';
-import { useContext } from 'react';
-import { LayoutContext } from '../../App';
+import { SocialLinks } from '../../constants/constants'; // ScreenSize
+//import { useContext } from 'react';
+//import { LayoutContext } from '../../App';
 
 
 export default function Social() {
   const { t } = useTranslation();
-  const { screenSize } = useContext(LayoutContext);
+  //const { screenSize } = useContext(LayoutContext);
   
   return (
     <div className="social-wrapper">
-      {screenSize === ScreenSize.Desktop && <span className="title">{t("Stay connected")}</span>}
+      <span className="sub-title">{t("Stay connected")}</span>
       <div className="links-wrapper">
         <img src={require("../../assets/icons/telegram-icon.svg").default} alt="telegram" onClick={() => window.open(SocialLinks.Telegram, '_blank')} />
         <img src={require("../../assets/icons/github-icon.svg").default} alt="github" onClick={() => window.open(SocialLinks.GitHub, '_blank')} />

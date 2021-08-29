@@ -1,3 +1,5 @@
+@import "./constants/constants.scss";
+
 @font-face {
   font-family: RobotoMono;
   src: url(./assets/fonts/RobotoMono-VariableFont_wght.ttf);
@@ -5,6 +7,6 @@
 
 body {
   font-family: RobotoMono;
-  background-color: #000723;
+  background-color: $dark-blue;
   margin: 0px;
 }
