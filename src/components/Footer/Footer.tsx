@@ -16,7 +16,6 @@ export default function Footer() {
       <div className="links-wrapper">
         <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Overview")}</a>
         <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Term of use")}</a>
-        {/* <a target="_blank" rel="noopener noreferrer" href="https://google.com">{t("Privacy Policy")}</a> */}
       </div>
     </div>
   )

@@ -24,10 +24,12 @@ export default function Welcome() {
 
   return (
     <div className="welcome-wrapper">
-      <Lottie options={defaultLottieOptions} />
-      <div className="buttons-wrapper">
-        <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button fill">{screenSize === ScreenSize.Desktop ? t("Happy hunting") : t("Launch app")}</button>
-        <button onClick={() => window.open(MASTER_SHREDDER_HACKER_LINK, '_blank')} className="button">{t("Master Shredder hacker?")}</button>
+      <div className="welcome-content">
+        <Lottie options={defaultLottieOptions} />
+        <div className="buttons-wrapper">
+          <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button fill">{screenSize === ScreenSize.Desktop ? t("Happy hunting") : t("Launch app")}</button>
+          <button onClick={() => window.open(MASTER_SHREDDER_HACKER_LINK, '_blank')} className="button">{t("Master Shredder hacker?")}</button>
+        </div>
       </div>
     </div>
   )

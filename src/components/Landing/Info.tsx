@@ -9,14 +9,6 @@ export default function Info() {
   const { t } = useTranslation();
   return (
     <div className="info-wrapper">
-      <section className="protector-wrapper">
-        <img className="protector-icon" src={require("../../assets/icons/protector.svg").default} alt="protector" />
-        <div className="text-wrapper">
-          <span className="title">{t("Become a protector")}</span>
-          <span className="text">{t("Protector explained")}</span>
-          <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button deposit-claim-btn">{t("Deposite and claim Hats")}</button>
-        </div>
-      </section>
       <section className="features-wrapper">
         <div className="features-content">
           <div className="title">{t("Features title")}</div>
@@ -37,6 +29,16 @@ export default function Info() {
         </div>
         <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Learn more")}</a>
       </section>
+
+      <section className="protector-wrapper">
+        <img className="protector-icon" src={require("../../assets/icons/protector.svg").default} alt="protector" />
+        <div className="text-wrapper">
+          <span className="title">{t("Become a protector")}</span>
+          <span className="text">{t("Protector explained")}</span>
+          <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button deposit-claim-btn">{t("Deposit and claim Hats")}</button>
+        </div>
+      </section>
+
       <section className="protocol-wrapper">
         <img className="protocol-icon" src={require("../../assets/icons/protocol.svg").default} alt="protocol" />
         <div className="text-wrapper">
