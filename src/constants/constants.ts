@@ -15,6 +15,8 @@ export const MASTER_SHREDDER_HACKER_LINK = "https://lpxwgn6w00e.typeform.com/to/
 
 export const GIT_BOOK = "https://docs.hats.finance/";
 
+export const TERMS_OF_USE = "https://docs.hats.finance/terms-of-use-1";
+
 export const GET_IN_TOUCH = "https://forms.gle/tqRr4orFCExgT4pX8";
 
 export const IPFS_PREFIX = "https://ipfs.io/ipfs/";
