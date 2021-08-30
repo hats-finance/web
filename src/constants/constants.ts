@@ -17,7 +17,9 @@ export const GIT_BOOK = "https://docs.hats.finance/";
 
 export const TERMS_OF_USE = "https://docs.hats.finance/terms-of-use-1";
 
-export const GET_IN_TOUCH = "https://forms.gle/tqRr4orFCExgT4pX8";
+export const GET_IN_TOUCH = "https://lpxwgn6w00e.typeform.com/to/l81KAWdy";
+
+export const COOKIES_POLICY = "https://docs.hats.finance/cookies-policy";
 
 export const IPFS_PREFIX = "https://ipfs.io/ipfs/";
 

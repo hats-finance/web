@@ -4,7 +4,7 @@ export const translationEN = {
   "Create Vault": "Create Vault",
   "App": "APP",
   "Become a protector": "BECOME A PROTECTOR",
-  "Protector explained": "We offer to every participant in the web3 ecosystem skin in the game, to ensure a more secure future for the users of Ethereum. Join the security effort by staking your tokens.",
+  "Protector explained": "We offer every participant in the web3 \n ecosystem skin in the game, to ensure a \n more secure future for the users of \n Ethereum. Join the security effort by \n staking your tokens.",
   "Deposit and claim Hats": "Deposit and claim Hats",
   "Features title": "CREATING THE FUTURE OF SECURITY ON #ETHEREUM",
   "#Decentralized": "#Decentralized",
@@ -21,6 +21,8 @@ export const translationEN = {
   "Docs": "Docs",
   "Learn more": "Learn more",
   "Protect my protocol": "PROTECT MY PROTOCOL",
-  "Protocol explained": "We allow any project to protect their smart contracts via a HATs security vault. While this is a manual process at the moment, in the future it will be fully autonomous and governance controlled.",
-  "Get in touch": "Get in touch"
+  "Protocol explained": "We allow any project to protect their \n smart contracts via a HATs security \n vault. While this is a manual process \n at the moment, in the future it will be \n fully autonomous and governance \n controlled.",
+  "Get in touch": "Get in touch",
+  "Cookies Policy": "Cookies Policy",
+  "Community": "Community"
 }

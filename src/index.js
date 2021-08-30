@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './i18n';
 import { BrowserRouter as Router } from "react-router-dom";
+import HttpsRedirect from "react-https-redirect";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <HttpsRedirect>
+      <Router>
+        <App />
+      </Router>
+    </HttpsRedirect>
   </React.StrictMode>,
   document.getElementById('root')
 );

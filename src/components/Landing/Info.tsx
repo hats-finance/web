@@ -11,7 +11,7 @@ export default function Info() {
     <div className="info-wrapper">
       <section className="features-wrapper">
         <div className="features-content">
-          <div className="title">{t("Features title")}</div>
+          <div className="title large">{t("Features title")}</div>
           <div className="features-icons-wrapper">
             <div className="feature">
               <CubesIcon />
