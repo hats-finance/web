@@ -19,7 +19,6 @@ export default function Header() {
     {/* <button className="button create-vault-btn">{t("Create Vault")}</button> */}
     <button onClick={() => window.open(DAPP_LINK, '_blank')} className="button fill">{t("App")}</button>
     {screenSize === ScreenSize.Mobile && <>
-      <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Overview")}</a>
       <a target="_blank" rel="noopener noreferrer" href={TERMS_OF_USE}>{t("Term of use")}</a>
       <a target="_blank" rel="noopener noreferrer" href={COOKIES_POLICY}>{t("Cookies Policy")}</a>
     </>}
