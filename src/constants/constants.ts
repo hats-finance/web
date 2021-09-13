@@ -1,5 +1,5 @@
 export enum RoutePaths {
-
+  NFT = "/nft"
 }
 
 export enum ScreenSize {
@@ -20,6 +20,10 @@ export const TERMS_OF_USE = "https://docs.hats.finance/terms-of-use-1";
 export const GET_IN_TOUCH = "https://lpxwgn6w00e.typeform.com/to/l81KAWdy";
 
 export const COOKIES_POLICY = "https://docs.hats.finance/cookies-policy";
+
+export const PRIVACY_POLICY = "https://docs.hats.finance/privacy-policy";
+
+export const HATS_NFT_FORM = "https://lpxwgn6w00e.typeform.com/to/rjzckxR5";
 
 export const IPFS_PREFIX = "https://ipfs.io/ipfs/";
 

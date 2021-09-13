@@ -24,5 +24,12 @@ export const translationEN = {
   "Protocol explained": "We allow any project to protect their \n smart contracts via a HATs security \n vault. While this is a manual process \n at the moment, in the future it will be \n fully autonomous and governance \n controlled.",
   "Get in touch": "Get in touch",
   "Cookies Policy": "Cookies Policy",
-  "Community": "Community"
+  "Community": "Community",
+  "NFT": "NFT",
+  "NFT vision": "NFT VISION AT HATS FINANCE",
+  "NFT vision explained": "Hats Finance incentivizes hackers to do the right thing. We believe that ethical hacking will transform the future of DeFi, and having the right incentives in place will fix many of the smart contract vulnerabilities we have today.",
+  "Our vision": "OUR VISION",
+  "Our vision explained": "Hats Finance incentivizes hackers to do the right thing. We believe that ethical hacking will transform the future of DeFi, and having the right incentives in place will fix many of the smart contract vulnerabilities we have today.",
+  "Call for artists": "CALL FOR ARTISTS",
+  "Call for artists explained": "The expected growth of Hats finance will soon require quality NFTs to be available for hackers and the Hats community. That is the reason why we are calling out artists and creatives that want to contribute to the bigger vision of crypto security and become key contributors to the biggest white hacks in DeFi. If you are an artist that wants to contribute to the growth of Hats Finance, feel free to apply for an exhibition slot and send your designs to be used as a valuable prize for hackers.",
 }

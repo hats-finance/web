@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './App.scss';
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
-import { SMALL_SCREEN_BREAKPOINT, ScreenSize } from "./constants/constants";
+import NFT from "./components/NFT/NFT";
+import { SMALL_SCREEN_BREAKPOINT, ScreenSize, RoutePaths } from "./constants/constants";
 import { getScreenSize } from "./utils";
 import { Route, Switch } from "react-router-dom";
 
@@ -25,6 +26,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Landing />
+          </Route>
+          <Route path={RoutePaths.NFT}>
+            <NFT />
           </Route>
         </Switch>
       </div>

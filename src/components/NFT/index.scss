@@ -1,0 +1,40 @@
+@import "../../constants/constants.scss";
+
+.nft-wrapper {
+  display: flex;
+  max-width: $element-max-width;
+  padding: $header-height $element-padding;
+  margin: auto;
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    section {
+      display: flex;
+      flex-direction: column;
+      margin: 50px 0;
+      .title {
+        font-size: $medium;
+        color: $white;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  iframe {
+    height: 100vh;
+    width: 100%;
+    margin-left: 60px;
+    max-height: 800px;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .nft-wrapper {
+    flex-direction: column;
+    iframe {
+      margin-left: unset;
+      height: 50vh;
+    }
+  }
+}

@@ -17,6 +17,7 @@
     align-items: center;
     color: $white;
     letter-spacing: 3px;
+    text-decoration: none;
   }
   .links-wrapper {
     display: flex;
@@ -29,6 +30,10 @@
       line-height: 30px;
       text-decoration: none;
       color: $turquoise;
+      &.selected {
+        font-weight: bold;
+        border-bottom: 3px solid;
+      }
     }
   }
 
