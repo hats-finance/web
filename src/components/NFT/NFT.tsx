@@ -14,6 +14,10 @@ export default function NFT() {
           <div>{t("NFT vision explained")}</div>
         </section>
         <section>
+          <div className="title">{t("Our Vision")}</div>
+          <div>{t("Our Vision explained")}</div>
+        </section>
+        <section>
           <div className="title">{t("Call for artists")}</div>
           <div>{t("Call for artists explained")}</div>
         </section>
