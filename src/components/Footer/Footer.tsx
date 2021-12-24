@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import LogoIcon from '../../assets/icons/logo.icon';
+//import LogoIcon from '../../assets/icons/logo.icon';
+import LogoChristmas from "../../assets/icons/logo-christmas.svg";
 import { COOKIES_POLICY, TERMS_OF_USE } from '../../constants/constants';
 import './index.scss';
 
@@ -10,8 +11,8 @@ export default function Footer() {
   return (
     <div className="footer-wrapper">
       <div className="logo-wrapper">
-        <LogoIcon />
-        <span>Hats</span>
+        <img src={LogoChristmas} alt="christmas icon" />
+        {/* <span>Hats</span> */}
       </div>
       <div className="links-wrapper">
         <a target="_blank" rel="noopener noreferrer" href={TERMS_OF_USE}>{t("Term of use")}</a>
