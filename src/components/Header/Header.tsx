@@ -1,7 +1,6 @@
 import './index.scss';
 import { useTranslation } from 'react-i18next';
-//import LogoIcon from "../../assets/icons/logo.icon";
-import LogoChristmas from "../../assets/icons/logo-christmas-with-text.svg";
+import LogoIcon from "../../assets/icons/logo.icon";
 import { LayoutContext } from '../../App';
 import { useContext, useState } from 'react';
 import { COOKIES_POLICY, DAPP_LINK, GIT_BOOK, RoutePaths, ScreenSize, SocialLinks, TERMS_OF_USE } from '../../constants/constants';
@@ -27,8 +26,8 @@ export default function Header() {
   return (
     <div className="header-wrapper">
       <Link to="/" className="logo-wrapper">
-        <img src={LogoChristmas} alt="christmas icon" />
-        {/* <span>Hats</span> */}
+        <LogoIcon />
+        <span>Hats</span>
       </Link>
       {screenSize === ScreenSize.Desktop ? links : <img src={require(toggleMenu ? "../../assets/icons/close.svg" : "../../assets/icons/menu.svg").default} onClick={() => setToggleMenu(!toggleMenu)} alt="menu" />}
       {toggleMenu && <Menu>{links}</Menu>}
