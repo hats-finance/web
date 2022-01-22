@@ -32,4 +32,11 @@ export const translationEN = {
   "Our Vision explained": "Our main goal is to incentivize hackers beyond monetary gain, by giving them a sense of pride in the ownership of a rare and valuable NFT that can only be obtained by successfully protecting a protocol or project and its funds. We are seeing the graphical and artistic concepts of Hats project as being an essential part of the change we are aiming to bring into the space artists who are aligned with these values.",
   "Call for artists": "CALL FOR ARTISTS",
   "Call for artists explained": "We are calling out to all artists and creatives that want to contribute to the safety of the crypto ecosystem by creating unique NFTs. Joining this effort will be incentivised by hats.finance Apply for the hats NFT artist program using the form -->",
+  "NFTRouth": {
+    TabController: {
+      airdrop: "CROWCLAN AIRDROP",
+      collections: "COLLECTIONS",
+      forArtists: "CALL FOR ARTISTS"
+    }
+  }
 }

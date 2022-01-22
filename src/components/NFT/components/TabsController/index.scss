@@ -1,0 +1,20 @@
+@import "../../../../constants/constants.scss";
+
+.tabs-controller-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  .tab {
+    color: $white;
+    cursor: pointer;
+    padding-bottom: 5px;
+    &.selected {
+      font-weight: bold;
+      border-bottom: 3px solid $turquoise;
+    }
+
+    &:hover:not(.selected) {
+      opacity: 0.9;
+    }
+  }
+}

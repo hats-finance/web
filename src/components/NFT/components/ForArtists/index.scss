@@ -1,0 +1,45 @@
+@import "../../../../constants/constants.scss";
+
+.for-artists-wrapper {
+  display: flex;
+  max-width: $element-max-width;
+  height: calc(100vh - 150px);
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 150px);
+    overflow: scroll;
+    section {
+      display: flex;
+      flex-direction: column;
+      margin: 50px 0;
+      white-space: pre-line;
+      .title {
+        font-size: $medium;
+        color: $white;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    margin-left: 60px;
+    max-height: 1000px;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .for-artists-wrapper {
+    flex-direction: column;
+    height: unset;
+    .info-wrapper {
+      height: unset;
+    }
+    iframe {
+      margin-left: unset;
+      height: 50vh;
+    }
+  }
+}

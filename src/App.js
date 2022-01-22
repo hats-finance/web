@@ -17,8 +17,6 @@ function App() {
     setScreenSize(screenSize.matches ? ScreenSize.Desktop : ScreenSize.Mobile);
   });
 
-
-
   return (
     <LayoutContext.Provider value={{ screenSize: screenSize }}>
       <div className="app-wrapper">

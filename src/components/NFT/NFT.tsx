@@ -1,28 +1,35 @@
-import { useTranslation } from "react-i18next";
-import { HATS_NFT_FORM } from "../../constants/constants";
+import { useState } from "react";
+import ForArtists from "./components/ForArtists/ForArtists";
+import TabsController from "./components/TabsController/TabsController";
 import './index.scss';
 
+export enum Tab {
+  Airdrop,
+  Collections,
+  ForArtists
+}
 
 export default function NFT() {
-  const { t } = useTranslation();
+  const [currentTab, setCurrentTab] = useState(Tab.Airdrop);
+
+  const renderContent = (currentTab: Tab) => {
+    switch (currentTab) {
+      case Tab.Airdrop:
+        return "";
+      case Tab.Collections:
+        return "";
+      case (Tab.ForArtists):
+        return <ForArtists />;
+    }
+  }
 
   return (
     <div className="nft-wrapper">
-      <div className="info-wrapper">
-        <section>
-          <div className="title">{t("NFT vision")}</div>
-          <div>{t("NFT vision explained")}</div>
-        </section>
-        <section>
-          <div className="title">{t("Our Vision")}</div>
-          <div>{t("Our Vision explained")}</div>
-        </section>
-        <section>
-          <div className="title">{t("Call for artists")}</div>
-          <div>{t("Call for artists explained")}</div>
-        </section>
+      <div className="banner">Banner</div>
+      <div className="nft-content">
+        <TabsController currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        {renderContent(currentTab)}
       </div>
-      <iframe src={HATS_NFT_FORM} title="Hats NFT form" />
     </div>
   )
 }
