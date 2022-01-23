@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ForArtists from "./components/ForArtists/ForArtists";
 import TabsController from "./components/TabsController/TabsController";
+import Collections from "./components/Collections/Collections";
+import Airdrop from "./components/Airdrop/Airdrop";
 import './index.scss';
 
 export enum Tab {
@@ -15,9 +17,9 @@ export default function NFT() {
   const renderContent = (currentTab: Tab) => {
     switch (currentTab) {
       case Tab.Airdrop:
-        return "";
+        return <Airdrop />;
       case Tab.Collections:
-        return "";
+        return <Collections />;
       case (Tab.ForArtists):
         return <ForArtists />;
     }

@@ -1,0 +1,9 @@
+@import "../../../../constants/constants.scss";
+
+.collections-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $element-max-width;
+  height: calc(100vh - 150px);
+  margin: auto;
+}

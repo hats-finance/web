@@ -1,0 +1,15 @@
+@import "../../../../constants/constants.scss";
+
+.airdrop-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $element-max-width;
+  height: calc(100vh - 150px);
+  margin: auto;
+  .crow-moto {
+    font-size: $medium;
+    color: $white;
+    font-style: italic;
+    text-align: center;
+  }
+}
