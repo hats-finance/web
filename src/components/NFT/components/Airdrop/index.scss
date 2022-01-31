@@ -12,4 +12,25 @@
     font-style: italic;
     text-align: center;
   }
+  .nfts-container {
+    display: grid;
+    grid-gap: 73px;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    .nft-preview-wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: $blue;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+      .details-wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        margin: 12px 12px 50px 12px;
+      }
+    }
+  }
 }

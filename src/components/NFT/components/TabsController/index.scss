@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
+  max-width: $element-max-width;
+  margin-left: auto;
+  margin-right: auto;
   .tab {
     color: $white;
     cursor: pointer;

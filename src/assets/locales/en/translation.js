@@ -37,7 +37,8 @@ export const translationEN = {
       "Once a Crow explained": "The first Hats airdrop is dedicated to our Early supporters - Depositors and contributors. We would like to thank you, for your support and patience while we build an important protocol to make the crypto space safer. \n \n We would like to see our community, with their NFT PFP around our social platform to act like a real clan.  Together we can make the crypto community safer for larger adoption.",
       "The Crow": "THE CROW",
       "The Crow explained": "Is a spirit animal associated with life mysteries and magic. Crows are common animals that we can find all around the globe, as such, they are a reminder that magic is everywhere. Like our early supporters, the crows are very clever, intelligent, adaptability with excellent teamwork and reciprocity - exactly like we are wishing to see in Hats community. \n \n Above all the crows are the messengers of the gods, that can transfer the right message to the right person - at the right time!",
-      "Crow Moto": "IF CODE IS THE LAW - THE CROWS CAN MAKE SURE EVERYONE KNOWS IT!"
+      "Crow Moto": "IF CODE IS THE LAW - THE CROWS CAN MAKE SURE EVERYONE KNOWS IT!",
+      "Featured": "FEATURED"
     },
     Collections: {
       "Hackers Rewards": "HACKERS REWARDS",
