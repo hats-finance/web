@@ -3,6 +3,7 @@ import ForArtists from "./components/ForArtists/ForArtists";
 import TabsController from "./components/TabsController/TabsController";
 import Collections from "./components/Collections/Collections";
 import Airdrop from "./components/Airdrop/Airdrop";
+import { IPFS_ASSETS, IPFS_PREFIX } from "../../constants/constants";
 import './index.scss';
 
 export enum Tab {
@@ -27,7 +28,7 @@ export default function NFT() {
 
   return (
     <div className="nft-wrapper">
-      <div className="banner">Banner</div>
+      <img className="banner" src={`${IPFS_PREFIX}/${IPFS_ASSETS}/New%20website%20banner.gif`} alt="banner" />
       <div className="nft-content">
         <TabsController currentTab={currentTab} setCurrentTab={setCurrentTab} />
         {renderContent(currentTab)}
