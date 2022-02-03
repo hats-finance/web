@@ -22,7 +22,7 @@ export default function Airdrop() {
         <div className="title">{t("NFTRouth.Airdrop.The Crow")}</div>
         <div>{t("NFTRouth.Airdrop.The Crow explained")}</div>
       </section>
-      <span>{t("Artist")}: <a target="_blank" rel="noopener noreferrer" href={ARTIST_LINK}>Shira</a></span>
+      <span>{t("Artist")}: <a target="_blank" rel="noopener noreferrer" href={ARTIST_LINK}>Shira Noc</a></span>
       <span className="crow-moto">{t("NFTRouth.Airdrop.Crow Moto")}</span>
       <section>
         <span className="title">{t("NFTRouth.Airdrop.Featured")}</span>
