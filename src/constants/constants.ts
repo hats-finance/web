@@ -27,7 +27,7 @@ export const HATS_NFT_FORM = "https://lpxwgn6w00e.typeform.com/to/rjzckxR5";
 
 export const IPFS_PREFIX = "https://hats-finance.mypinata.cloud/ipfs";
 
-export const IPFS_ASSETS = "QmeWSmnCzAgy7YkrybPNruwUNFSoUWpWpkZ7kQLkr5Shgs";
+export const IPFS_ASSETS = "QmTvNq2BNpzeAYQPCfzJ5jX25Tm4JvJ2x8dk4PdoxeLxtA";
 
 export enum SocialLinks {
   Discord = "https://discord.gg/RhyRjJR85d",

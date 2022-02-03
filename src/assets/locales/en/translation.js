@@ -26,6 +26,7 @@ export const translationEN = {
   "Cookies Policy": "Cookies Policy",
   "Community": "Community",
   "NFT": "NFT",
+  "Artist": "Artist",
   NFTRouth: {
     TabController: {
       airdrop: "CROWCLAN AIRDROP",
@@ -43,6 +44,8 @@ export const translationEN = {
     Collections: {
       "Hackers Rewards": "HACKERS REWARDS",
       "Hackers Rewards explained": "Hats is a defi project that aims to change the mindset of hackers and bring talented developers into making the ecosystem safer instead of hacking it. As those goals are composed of financial, social and cultural change we have decided to put art as one of the main pillars of our Defi security incentive mechanism of Hats.",
+      "Collection Example": "ELECTRIC DREAMS COLLECTION",
+      "Collection Example explained": "The 'Electric Dream' collection presents a dystopian fantasy of our future.In which human and machine relationships stand alone in short clips, allowing us a  glimpse of what is to come in the eyes of the artist David Budzik."
     },
     ForArtists: {
       "NFT vision": "NFT VISION AT HATS FINANCE",
