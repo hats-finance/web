@@ -4,8 +4,12 @@
   display: flex;
   flex-direction: column;
   max-width: $element-max-width;
-  height: calc(100vh - 150px);
   margin: auto;
+  .to-nft-airdrop {
+    margin: 30px 0;
+    width: 370px;
+    align-self: center;
+  }
   .crow-moto {
     font-size: $medium;
     color: $white;
@@ -32,6 +36,14 @@
         color: $white;
         margin: 12px 12px 50px 12px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .airdrop-wrapper {
+    .to-nft-airdrop {
+      width: 100%;
     }
   }
 }

@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
 import NFTPreview from "./NFTPreview";
+import { DAPP_LINK } from "../../../../constants/constants";
 import "./index.scss";
 
-const FEATURED_NFTS = ["990", "991", "992", "993", "994", "995", "996", "997"];
+const FEATURED_NFTS = ["892", "342", "427", "374", "317", "807", "311", "852", "318"];
 const ARTIST_LINK = "https://shira-noc.com/";
 
 export default function Airdrop() {
@@ -23,6 +24,7 @@ export default function Airdrop() {
         <div>{t("NFTRouth.Airdrop.The Crow explained")}</div>
       </section>
       <span>{t("Artist")}: <a target="_blank" rel="noopener noreferrer" href={ARTIST_LINK}>Shira Noc</a></span>
+      <button className="button fill to-nft-airdrop" onClick={() => window.open(`${DAPP_LINK}/nft_airdrop`, '_blank')}>{t("NFTRouth.Airdrop.Check Your Eligibility")}</button>
       <span className="crow-moto">{t("NFTRouth.Airdrop.Crow Moto")}</span>
       <section>
         <span className="title">{t("NFTRouth.Airdrop.Featured")}</span>

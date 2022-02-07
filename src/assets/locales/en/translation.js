@@ -28,6 +28,7 @@ export const translationEN = {
   "NFT": "NFT",
   "Artist": "Artist",
   NFTRouth: {
+    "License": "License",
     TabController: {
       airdrop: "CROWCLAN AIRDROP",
       collections: "COLLECTIONS",
@@ -39,7 +40,8 @@ export const translationEN = {
       "The Crow": "THE CROW",
       "The Crow explained": "Is a spirit animal associated with life mysteries and magic. Crows are common animals that we can find all around the globe, as such, they are a reminder that magic is everywhere. Like our early supporters, the crows are very clever, intelligent, adaptability with excellent teamwork and reciprocity - exactly like we are wishing to see in Hats community. \n \n Above all the crows are the messengers of the gods, that can transfer the right message to the right person - at the right time!",
       "Crow Moto": "IF CODE IS THE LAW - THE CROWS CAN MAKE SURE EVERYONE KNOWS IT!",
-      "Featured": "FEATURED"
+      "Featured": "FEATURED",
+      "Check Your Eligibility": "CHECK YOUR ELIGIBILITY"
     },
     Collections: {
       "Hackers Rewards": "HACKERS REWARDS",

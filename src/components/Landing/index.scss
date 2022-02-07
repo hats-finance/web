@@ -76,8 +76,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-image: url("../../assets/icons/cubes.svg");
-    // background-size: cover;
     width: 100%;
     .features-content {
       max-width: $element-max-width;
@@ -126,12 +124,7 @@
   video {
     margin: 0 20px;
   }
-  // video:first-child {
-  //   margin-left: unset;
-  // }
-  // video:last-child {
-  //   margin-right: unset;
-  // }
+
   .swiper-slide {
     max-width: 200px;
   }

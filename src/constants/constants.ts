@@ -29,6 +29,8 @@ export const IPFS_PREFIX = "https://hats-finance.mypinata.cloud/ipfs";
 
 export const IPFS_ASSETS = "QmTvNq2BNpzeAYQPCfzJ5jX25Tm4JvJ2x8dk4PdoxeLxtA";
 
+export const LICENSE = "";
+
 export enum SocialLinks {
   Discord = "https://discord.gg/RhyRjJR85d",
   Twitter = "https://twitter.com/HatsFinance",
