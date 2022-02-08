@@ -28,7 +28,7 @@ export const translationEN = {
   "NFT": "NFT",
   "Artist": "Artist",
   NFTRouth: {
-    "License": "License",
+    "Terms of Sale of NFTs": "Terms of Sale of NFTs",
     TabController: {
       airdrop: "CROWCLAN AIRDROP",
       collections: "COLLECTIONS",
