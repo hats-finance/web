@@ -20,12 +20,15 @@
         margin-bottom: 10px;
       }
     }
-    a {
-      color: $turquoise;
-    }
     .nft-footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin: auto;
       max-width: $element-max-width;
+      a {
+        color: $turquoise;
+      }
     }
   }
 }
@@ -34,6 +37,13 @@
   .nft-wrapper {
     .nft-content {
       padding: $mobile-element-padding;
+      .nft-footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        a {
+          margin-bottom: 50px;
+        }
+      }
     }
   }
 }

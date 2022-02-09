@@ -3,7 +3,7 @@ import NFTPreview from "./NFTPreview";
 import { DAPP_LINK } from "../../../../constants/constants";
 import "./index.scss";
 
-const FEATURED_NFTS = ["892", "342", "427", "374", "317", "807", "311", "852", "318"];
+const FEATURED_NFTS = ["892", "342", "427", "374", "317", "807", "311", "852", "318", "801", "153", "19"];
 const ARTIST_LINK = "https://shira-noc.com/";
 
 export default function Airdrop() {

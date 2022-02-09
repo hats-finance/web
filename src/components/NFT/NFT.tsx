@@ -6,6 +6,7 @@ import Airdrop from "./components/Airdrop/Airdrop";
 import { IPFS_ASSETS, IPFS_PREFIX, TERMS_OF_SALE_OF_NFTS, ScreenSize } from "../../constants/constants";
 import { LayoutContext } from "../../App";
 import { useTranslation } from "react-i18next";
+import SocialLinksPanel from "../SocialLinksPanel/SocialLinksPanel";
 import './index.scss';
 
 export enum Tab {
@@ -38,6 +39,7 @@ export default function NFT() {
         {renderContent(currentTab)}
         <div className="nft-footer-wrapper">
           <a target="_blank" rel="noopener noreferrer" href={TERMS_OF_SALE_OF_NFTS}>{t("NFTRouth.Terms of Sale of NFTs")}</a>
+          <SocialLinksPanel />
         </div>
       </div>
     </div>
