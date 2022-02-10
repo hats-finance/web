@@ -1,0 +1,44 @@
+@import "../../../../constants/constants.scss";
+
+.tabs-controller-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  max-width: $element-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  .tab {
+    color: $white;
+    cursor: pointer;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0 20px;
+    &.selected {
+      font-weight: bold;
+      border-bottom: 3px solid $turquoise;
+    }
+
+    &:hover:not(.selected) {
+      opacity: 0.9;
+    }
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tabs-controller-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .tabs-controller-wrapper {
+    margin-bottom: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

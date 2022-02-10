@@ -1,0 +1,14 @@
+@import "../../constants/constants.scss";
+
+.links-wrapper {
+  img {
+    margin-right: 25px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  img:last-child {
+    margin-right: unset;
+  }
+}

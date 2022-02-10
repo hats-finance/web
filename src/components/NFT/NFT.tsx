@@ -1,28 +1,47 @@
+import { useContext, useState } from "react";
+import ForArtists from "./components/ForArtists/ForArtists";
+import TabsController from "./components/TabsController/TabsController";
+import Collections from "./components/Collections/Collections";
+import Airdrop from "./components/Airdrop/Airdrop";
+import { IPFS_ASSETS, IPFS_PREFIX, TERMS_OF_SALE_OF_NFTS, ScreenSize } from "../../constants/constants";
+import { LayoutContext } from "../../App";
 import { useTranslation } from "react-i18next";
-import { HATS_NFT_FORM } from "../../constants/constants";
+import SocialLinksPanel from "../SocialLinksPanel/SocialLinksPanel";
 import './index.scss';
 
+export enum Tab {
+  Airdrop,
+  Collections,
+  ForArtists
+}
 
 export default function NFT() {
+  const [currentTab, setCurrentTab] = useState(Tab.Airdrop);
+  const { screenSize } = useContext(LayoutContext);
   const { t } = useTranslation();
+
+  const renderContent = (currentTab: Tab) => {
+    switch (currentTab) {
+      case Tab.Airdrop:
+        return <Airdrop />;
+      case Tab.Collections:
+        return <Collections />;
+      case (Tab.ForArtists):
+        return <ForArtists />;
+    }
+  }
 
   return (
     <div className="nft-wrapper">
-      <div className="info-wrapper">
-        <section>
-          <div className="title">{t("NFT vision")}</div>
-          <div>{t("NFT vision explained")}</div>
-        </section>
-        <section>
-          <div className="title">{t("Our Vision")}</div>
-          <div>{t("Our Vision explained")}</div>
-        </section>
-        <section>
-          <div className="title">{t("Call for artists")}</div>
-          <div>{t("Call for artists explained")}</div>
-        </section>
+      <img className="banner" src={`${IPFS_PREFIX}/${IPFS_ASSETS}/${screenSize === ScreenSize.Desktop ? "New%20website%20banner" : "Mobile%20banner"}.gif`} alt="banner" />
+      <div className="nft-content">
+        <TabsController currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        {renderContent(currentTab)}
+        <div className="nft-footer-wrapper">
+          <a target="_blank" rel="noopener noreferrer" href={TERMS_OF_SALE_OF_NFTS}>{t("NFTRouth.Terms of Sale of NFTs")}</a>
+          <SocialLinksPanel />
+        </div>
       </div>
-      <iframe src={HATS_NFT_FORM} title="Hats NFT form" />
     </div>
   )
 }

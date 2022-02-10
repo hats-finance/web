@@ -1,0 +1,50 @@
+@import "../../../../constants/constants.scss";
+
+.airdrop-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $element-max-width;
+  margin: auto;
+  .to-nft-airdrop {
+    margin: 30px 0;
+    width: 370px;
+    align-self: center;
+  }
+  .crow-moto {
+    font-size: $medium;
+    color: $white;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .nfts-container {
+    display: grid;
+    grid-gap: 73px;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    margin-top: 20px;
+    .nft-preview-wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: $blue;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+      .details-wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        margin: 12px 12px 50px 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .airdrop-wrapper {
+    .to-nft-airdrop {
+      width: 100%;
+    }
+  }
+}

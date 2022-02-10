@@ -25,7 +25,11 @@ export const PRIVACY_POLICY = "https://docs.hats.finance/privacy-policy";
 
 export const HATS_NFT_FORM = "https://lpxwgn6w00e.typeform.com/to/rjzckxR5";
 
-export const IPFS_PREFIX = "https://ipfs.io/ipfs/";
+export const IPFS_PREFIX = "https://hats-finance.mypinata.cloud/ipfs";
+
+export const IPFS_ASSETS = "QmTvNq2BNpzeAYQPCfzJ5jX25Tm4JvJ2x8dk4PdoxeLxtA";
+
+export const TERMS_OF_SALE_OF_NFTS = "https://docs.hats.finance/nft/terms-of-sale-of-nfts";
 
 export enum SocialLinks {
   Discord = "https://discord.gg/RhyRjJR85d",
