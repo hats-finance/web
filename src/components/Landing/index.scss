@@ -25,6 +25,36 @@
     max-width: $element-max-width;
     padding: 0 $element-padding;
     margin: auto;
+    .welcome-animation-wrapper {
+      position: relative;
+    }
+    .welcome-animation-content {
+      box-sizing: border-box;
+      background-color: $blue;
+      line-height: 270%;
+      padding: 50px;
+      width: 100%;
+      height: 100%;
+
+      visibility: hidden;
+    }
+    .welcome-animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      box-sizing: border-box;
+      background-color: $blue;
+      line-height: 270%;
+      padding: 50px;
+      width: 100%;
+      height: 100%;
+
+      animation-duration: 0.8s;
+      animation-name: welcome;
+      animation-timing-function: linear;
+    }
     .buttons-wrapper {
       display: flex;
       justify-content: flex-end;
@@ -166,6 +196,18 @@
     padding: 20px 0;
     margin: 20px 0;
     .welcome-content {
+      .welcome-animation-content {
+        line-height: 200%;
+        padding: 15px;
+        font-size: $small;
+
+        visibility: hidden;
+      }
+      .welcome-animation {
+        line-height: 200%;
+        padding: 15px;
+        font-size: $small;
+      }
       .buttons-wrapper {
         display: flex;
         flex-direction: column;
@@ -233,5 +275,25 @@
         margin-right: 10px;
       }
     }
+  }
+}
+
+@keyframes welcome {
+  from {
+    height: 20px;
+    width: 0px;
+    padding: 0;
+  }
+
+  55% {
+    height: 20px;
+    width: 70%;
+    padding: 0;
+  }
+
+  to {
+    height: 100%;
+    width: 100%;
+    padding: 50px;
   }
 }
