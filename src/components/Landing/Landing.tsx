@@ -15,7 +15,7 @@ export default function Landing() {
       <Welcome />
       <Info />
       <Social />
-      {screenSize === ScreenSize.Desktop && <Footer />}
+      {screenSize === ScreenSize.Desktop && <Welcome />}
     </div>
   )
 }
