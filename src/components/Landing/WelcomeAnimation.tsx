@@ -5,19 +5,13 @@ import "./index.scss";
 export default function Welcome() {
   const { t } = useTranslation();
   const [helloHatterTyping, setHelloHatterTyping] = useState("");
-  const [helloHatterDescriptionTyping, setHelloHatterDescriptionTyping] = useState("");
 
   const helloHatter = t("#HelloHatter");
-  const helloHatterDescription = t("#HelloHatterDescription");
   const timeForChar = 10;
   let i = 0;
-  let j = 0;
 
   const animateText = () => {
     typeHelloHatter();
-    setTimeout(() => {
-      typeHelloHatterDescription();
-    }, timeForChar * helloHatter.length);
   };
 
   const typeHelloHatter = () => {
@@ -26,14 +20,6 @@ export default function Welcome() {
     i++;
     setTimeout(() => {
       typeHelloHatter();
-    }, timeForChar);
-  };
-  const typeHelloHatterDescription = () => {
-    if (j > helloHatterDescription.length) return;
-    setHelloHatterDescriptionTyping(helloHatterDescription.substring(0, j));
-    j++;
-    setTimeout(() => {
-      typeHelloHatterDescription();
     }, timeForChar);
   };
 
@@ -47,12 +33,10 @@ export default function Welcome() {
   return (
     <div className="welcome-animation-wrapper">
       <div className="welcome-animation-content">
-        {t("#HelloHatter")} <br />
-        {t("#HelloHatterDescription")}
+        {t("#HelloHatter")}
       </div>
       <div className="welcome-animation">
-        {helloHatterTyping} <br />
-        {helloHatterDescriptionTyping}
+        {helloHatterTyping}
       </div>
     </div>
   );
