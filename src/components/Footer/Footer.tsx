@@ -6,7 +6,6 @@ import './index.scss';
 
 export default function Footer() {
   const { t } = useTranslation();
-  
   return (
     <div className="footer-wrapper">
       <div className="logo-wrapper">
