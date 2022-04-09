@@ -1,11 +1,12 @@
-import './index.scss';
-import Info from "./Info";
-import Welcome from "./Welcome";
-import Social from "./Social";
+import { useContext } from 'react';
+import Welcome from "./components/Welcome/Welcome";
+import TheStaker from './components/TheStaker/TheStaker';
+import TheHacker from './components/TheHacker/TheHacker';
+import TheProject from './components/TheProject/TheProject';
 import Footer from "../Footer/Footer";
 import { LayoutContext } from '../../App';
-import { useContext } from 'react';
 import { ScreenSize } from '../../constants/constants';
+import './index.scss';
 
 export default function Landing() {
   const { screenSize } = useContext(LayoutContext);
@@ -13,8 +14,9 @@ export default function Landing() {
   return (
     <div className="landing-wrapper">
       <Welcome />
-      <Info />
-      <Social />
+      <TheStaker />
+      <TheHacker />
+      <TheProject />
       {screenSize === ScreenSize.Desktop && <Footer />}
     </div>
   )

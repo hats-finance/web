@@ -1,0 +1,20 @@
+@import "../../../../constants/constants.scss";
+
+.welcome-wrapper {
+  background: linear-gradient(89.94deg, #160055 -26.64%, rgba(22, 23, 43, 0) 99.95%);
+  width: 100%;
+  .hats-finance {
+    color: $deep-turquoise;
+    font-size: $xlarge;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .welcome-wrapper {
+    flex-direction: column;
+    .hats-finance {
+      font-size: $large;
+    }
+  }
+}

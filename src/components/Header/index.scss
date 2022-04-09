@@ -9,8 +9,8 @@
   width: 100%;
   padding: 20px $element-padding;
   box-sizing: border-box;
-  background-color: $dark-blue;
   height: $header-height;
+  background-color: $deep-blue;
   .logo-wrapper {
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
       margin: 0 25px;
       line-height: 30px;
       text-decoration: none;
-      color: $turquoise;
+      color: $white;
       &.selected {
         font-weight: bold;
         border-bottom: 3px solid;

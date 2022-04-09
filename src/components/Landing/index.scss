@@ -5,6 +5,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  .section {
+    .section-content {
+      display: flex;
+      max-width: $element-max-width;
+      padding: 0 $element-padding;
+      margin: auto;
+      align-items: center;
+      .section-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        .section-title {
+          font-size: $xxlarge;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        .section-description {
+          font-size: $large;
+        }
+      }
+      .section-image {
+
+      }
+    }
+  }
+
   .title {
     color: $white;
     font-size: $medium;
@@ -15,288 +43,318 @@
   }
 }
 
-.welcome-wrapper {
-  background-image: url("../../assets/icons/cubes.svg");
-  background-size: cover;
-  width: 100%;
-  padding: 50px 0;
-  margin: 50px 0;
-  .welcome-content {
-    max-width: $element-max-width;
-    padding: 0 $element-padding;
-    margin: auto;
-    .welcome-animation-wrapper {
-      position: relative;
-      font-size: $medium;
-    }
-    .welcome-animation-content {
-      box-sizing: border-box;
-      background-color: $blue;
-      line-height: 270%;
-      padding: 50px;
-      width: 100%;
-      height: 100%;
-      white-space: pre-line;
-
-      visibility: hidden;
-    }
-    .welcome-animation {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      box-sizing: border-box;
-      background-color: $blue;
-      line-height: 270%;
-      padding: 50px;
-      width: 100%;
-      height: 100%;
-      white-space: pre-line;
-
-      animation-duration: 0.8s;
-      animation-name: welcome;
-      animation-timing-function: linear;
-    }
-    .buttons-wrapper {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      margin-top: 20px;
-      button {
-        margin: 0px 20px;
-      }
-      button:last-child {
-        margin-right: unset;
-      }
-    }
-  }
-}
-
-.info-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  .protocol-wrapper,
-  .protector-wrapper {
-    display: flex;
-    align-items: center;
-    padding: 0 $element-padding;
-    max-width: $element-max-width;
-    .protocol-icon,
-    .protector-icon {
-      width: 200px;
-      margin-right: 100px;
-    }
-    .text-wrapper {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      .text {
-        word-spacing: 2px;
-        line-height: 30px;
-        white-space: pre-line;
-      }
-      .deposit-claim-btn {
-        width: 250px;
-        margin-top: 30px;
-      }
-    }
-  }
-
-  .features-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    .features-content {
-      max-width: $element-max-width;
-      padding: 0 $element-padding;
-      .features-icons-wrapper {
-        display: flex;
-        justify-content: space-between;
-        font-size: $small;
-        color: $white;
-        font-style: italic;
-        .feature {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          span {
-            margin-top: 20px;
-          }
-        }
-      }
-    }
-    a {
-      color: $turquoise;
-      margin-top: 50px;
-    }
-  }
-
-  section {
-    margin: 100px 0;
-  }
-}
-
-.nfts-wrapper {
-  max-width: $element-max-width;
-  padding: 0 $element-padding;
-  width: 100%;
-  box-sizing: border-box;
-  .nfts-container {
-    display: flex;
-    justify-content: space-between;
-    .nft-card {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-  video {
-    margin: 0 20px;
-  }
-
-  .swiper-slide {
-    max-width: 200px;
-  }
-}
-
-.social-wrapper {
-  background-image: url("../../assets/icons/cubes.svg");
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  .soical-content {
-    max-width: $element-max-width;
-    padding: 0 $element-padding;
-    display: flex;
-    align-items: flex-start;
-    box-sizing: border-box;
-    margin: 50px 0;
-    justify-content: center;
-    align-items: center;
-    .sub-title {
-      color: $white;
-      margin-right: 100px;
-      font-size: $medium;
-    }
-  }
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
   .landing-wrapper {
-    .title {
-      &.large {
-        font-size: $medium;
-      }
-    }
-  }
-
-  .welcome-wrapper {
-    padding: 20px 0;
-    margin: 20px 0;
-    .welcome-content {
-      .welcome-animation-content {
-        line-height: 200%;
-        padding: 15px;
-        font-size: $small;
-
-        visibility: hidden;
-      }
-      .welcome-animation {
-        line-height: 200%;
-        padding: 15px;
-        font-size: $small;
-      }
-      .buttons-wrapper {
-        display: flex;
-        flex-direction: column;
-        button {
-          margin: 10px 0px;
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .info-wrapper {
-    .protocol-wrapper,
-    .protector-wrapper {
-      flex-direction: column;
-      align-items: flex-start;
-      .protocol-icon,
-      .protector-icon {
-        width: 50px;
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-      .text-wrapper {
-        .text {
-          line-height: unset;
-          white-space: unset;
-        }
-        .deposit-claim-btn {
-          width: 100%;
-        }
-      }
-    }
-    .features-wrapper {
-      .features-content {
-        .features-icons-wrapper {
+    .section {
+      .section-content {
+        flex-direction: column-reverse;
+        padding: 0 $mobile-element-padding;
+        .section-text-wrapper {
+          display: flex;
           flex-direction: column;
-          .feature {
-            margin-bottom: 50px;
+          .section-title {
+            font-size: $large;
+            font-weight: 700;
+          }
+          .section-description {
+            font-size: $small;
           }
         }
-      }
-      a {
-        margin-top: unset;
-      }
-    }
-    section {
-      margin: 70px 0;
-    }
-  }
-
-  .nfts-wrapper {
-    video {
-      margin: unset;
-    }
-  }
-
-  .social-wrapper {
-    justify-content: flex-start;
-    .soical-content {
-      flex-direction: column;
-      .sub-title {
-        margin-bottom: 10px;
-      }
-      img {
-        margin-right: 10px;
+        .section-image {
+          width: 100%;
+        }
       }
     }
   }
 }
 
-@keyframes welcome {
-  from {
-    height: 20px;
-    width: 0px;
-    padding: 0;
-  }
 
-  55% {
-    height: 20px;
-    width: 70%;
-    padding: 0;
-  }
 
-  to {
-    height: 100%;
-    width: 100%;
-    padding: 50px;
-  }
-}
+
+
+
+// .welcome-wrapper {
+//   background: linear-gradient(89.94deg, #160055 -26.64%, rgba(22, 23, 43, 0) 99.95%);
+//   width: 100%;
+//   padding: 50px 0;
+//   margin: 50px 0;
+//   display: flex;
+//   .welcome-content {
+//     max-width: $element-max-width;
+//     padding: 0 $element-padding;
+//     margin: auto;
+//     .welcome-animation-wrapper {
+//       position: relative;
+//       font-size: $medium;
+//     }
+//     .welcome-animation-content {
+//       box-sizing: border-box;
+//       background-color: $blue;
+//       line-height: 270%;
+//       padding: 50px;
+//       width: 100%;
+//       height: 100%;
+//       white-space: pre-line;
+
+//       visibility: hidden;
+//     }
+//     .welcome-animation {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+
+//       box-sizing: border-box;
+//       background-color: $blue;
+//       line-height: 270%;
+//       padding: 50px;
+//       width: 100%;
+//       height: 100%;
+//       white-space: pre-line;
+
+//       animation-duration: 0.8s;
+//       animation-name: welcome;
+//       animation-timing-function: linear;
+//     }
+//     .buttons-wrapper {
+//       display: flex;
+//       justify-content: flex-end;
+//       width: 100%;
+//       margin-top: 20px;
+//       button {
+//         margin: 0px 20px;
+//       }
+//       button:last-child {
+//         margin-right: unset;
+//       }
+//     }
+//   }
+// }
+
+// .info-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 100%;
+//   .protocol-wrapper,
+//   .protector-wrapper {
+//     display: flex;
+//     align-items: center;
+//     padding: 0 $element-padding;
+//     max-width: $element-max-width;
+//     .protocol-icon,
+//     .protector-icon {
+//       width: 200px;
+//       margin-right: 100px;
+//     }
+//     .text-wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       max-width: 500px;
+//       .text {
+//         word-spacing: 2px;
+//         line-height: 30px;
+//         white-space: pre-line;
+//       }
+//       .deposit-claim-btn {
+//         width: 250px;
+//         margin-top: 30px;
+//       }
+//     }
+//   }
+
+//   .features-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     .features-content {
+//       max-width: $element-max-width;
+//       padding: 0 $element-padding;
+//       .features-icons-wrapper {
+//         display: flex;
+//         justify-content: space-between;
+//         font-size: $small;
+//         color: $white;
+//         font-style: italic;
+//         .feature {
+//           display: flex;
+//           flex-direction: column;
+//           align-items: center;
+//           span {
+//             margin-top: 20px;
+//           }
+//         }
+//       }
+//     }
+//     a {
+//       color: $turquoise;
+//       margin-top: 50px;
+//     }
+//   }
+
+//   section {
+//     margin: 100px 0;
+//   }
+// }
+
+// .nfts-wrapper {
+//   max-width: $element-max-width;
+//   padding: 0 $element-padding;
+//   width: 100%;
+//   box-sizing: border-box;
+//   .nfts-container {
+//     display: flex;
+//     justify-content: space-between;
+//     .nft-card {
+//       display: flex;
+//       flex-direction: column;
+//       text-align: center;
+//     }
+//   }
+//   video {
+//     margin: 0 20px;
+//   }
+
+//   .swiper-slide {
+//     max-width: 200px;
+//   }
+// }
+
+// .social-wrapper {
+//   background-image: url("../../assets/icons/cubes.svg");
+//   background-size: cover;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   .soical-content {
+//     max-width: $element-max-width;
+//     padding: 0 $element-padding;
+//     display: flex;
+//     align-items: flex-start;
+//     box-sizing: border-box;
+//     margin: 50px 0;
+//     justify-content: center;
+//     align-items: center;
+//     .sub-title {
+//       color: $white;
+//       margin-right: 100px;
+//       font-size: $medium;
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: $mobile-breakpoint) {
+//   .landing-wrapper {
+//     .title {
+//       &.large {
+//         font-size: $medium;
+//       }
+//     }
+//   }
+
+//   .welcome-wrapper {
+//     padding: 20px 0;
+//     margin: 20px 0;
+//     .welcome-content {
+//       .welcome-animation-content {
+//         line-height: 200%;
+//         padding: 15px;
+//         font-size: $small;
+
+//         visibility: hidden;
+//       }
+//       .welcome-animation {
+//         line-height: 200%;
+//         padding: 15px;
+//         font-size: $small;
+//       }
+//       .buttons-wrapper {
+//         display: flex;
+//         flex-direction: column;
+//         button {
+//           margin: 10px 0px;
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+
+//   .info-wrapper {
+//     .protocol-wrapper,
+//     .protector-wrapper {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       .protocol-icon,
+//       .protector-icon {
+//         width: 50px;
+//         margin-right: 0;
+//         margin-bottom: 10px;
+//       }
+//       .text-wrapper {
+//         .text {
+//           line-height: unset;
+//           white-space: unset;
+//         }
+//         .deposit-claim-btn {
+//           width: 100%;
+//         }
+//       }
+//     }
+//     .features-wrapper {
+//       .features-content {
+//         .features-icons-wrapper {
+//           flex-direction: column;
+//           .feature {
+//             margin-bottom: 50px;
+//           }
+//         }
+//       }
+//       a {
+//         margin-top: unset;
+//       }
+//     }
+//     section {
+//       margin: 70px 0;
+//     }
+//   }
+
+//   .nfts-wrapper {
+//     video {
+//       margin: unset;
+//     }
+//   }
+
+//   .social-wrapper {
+//     justify-content: flex-start;
+//     .soical-content {
+//       flex-direction: column;
+//       .sub-title {
+//         margin-bottom: 10px;
+//       }
+//       img {
+//         margin-right: 10px;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes welcome {
+//   from {
+//     height: 20px;
+//     width: 0px;
+//     padding: 0;
+//   }
+
+//   55% {
+//     height: 20px;
+//     width: 70%;
+//     padding: 0;
+//   }
+
+//   to {
+//     height: 100%;
+//     width: 100%;
+//     padding: 50px;
+//   }
+// }

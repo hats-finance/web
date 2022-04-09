@@ -3,22 +3,11 @@ export const translationEN = {
   "FAQ": "FAQ",
   "Create Vault": "Create Vault",
   "App": "APP",
-  "Become a protector": "BECOME A PROTECTOR",
-  "Protector explained": "We offer every participant in the web3 \n ecosystem skin in the game, to ensure a \n more secure future for the users of \n Ethereum. Join the security effort by \n staking your tokens.",
-  "Deposit and claim Hats": "Deposit and claim Hats",
-  "Features title": "CREATING THE FUTURE OF SECURITY ON #ETHEREUM",
-  "#Decentralized": "#Decentralized",
-  "#Permissionless": "#Permissionless",
-  "#Anonymous": "#Anonymous",
-  "#HelloHatter": "Hello new hatter, \n Welcome to Hats.Finance, a decentralized bug bounty protocol that allows everyone to add liquidity to bug bounties while farming $HATS.  Hackers can responsibly disclose vulnerabilities without KYC & be rewarded with the highest prizes.",
-  "Happy hunting": "Happy hunting",
-  "Master Shredder hacker?": "Master Shredder hacker?",
   "Stay connected": "STAY CONNECTED",
   "Overview": "Overview",
   "Term of use": "Term of use",
   "Privacy Policy": "Privacy Policy",
   "NFTs": "NFTs",
-  "Launch app": "Launch app",
   "Docs": "Docs",
   "Learn more": "Learn more",
   "Protect my protocol": "PROTECT MY PROTOCOL",
@@ -28,6 +17,26 @@ export const translationEN = {
   "Community": "Community",
   "NFT": "NFT",
   "Artist": "Artist",
+
+  Landing: {
+    Welcome: {
+      "HATS.FINANCE": "HATS.FINANCE",
+      "title": "Decentralized smart bug bounty marketplace",
+      "description": "Permissionless, scalable, and open bug bounty protocol that allows anyone to provide liquidity to bug bounties."
+    },
+    Staker: {
+      "title": "Secure, stake & farm $HATS",
+      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n\n Become a protector of the chain"
+    },
+    Hacker: {
+      "title": "Do what you do best",
+      "description": "Anyone, anywhere can find vulnerabilities contribute to protocol protection in a fully decentralized manner."
+    },
+    Project: {
+      "title": "Protect your Protocol",
+      "description": "Create a smart bug bounty for on-going protection."
+    }
+  },
   NFTRouth: {
     "Terms of Sale of NFTs": "Terms of Sale of NFTs",
     TabController: {
