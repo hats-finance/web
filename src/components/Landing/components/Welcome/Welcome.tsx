@@ -2,10 +2,8 @@
 import { useTranslation } from "react-i18next";
 import './index.scss';
 
-
 export default function Welcome() {
   const { t } = useTranslation();
-
 
   return (
     <div className="section welcome-wrapper">
@@ -17,6 +15,7 @@ export default function Welcome() {
         </div>
         <img src={require("../../../../assets/images/landing/welcome.svg").default} className="section-image" alt="all users" />
       </div>
+      <div className="moto">{t("Landing.Welcome.moto")}</div>
     </div>
   )
 }

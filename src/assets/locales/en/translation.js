@@ -22,7 +22,11 @@ export const translationEN = {
     Welcome: {
       "HATS.FINANCE": "HATS.FINANCE",
       "title": "Decentralized smart bug bounty marketplace",
-      "description": "Permissionless, scalable, and open bug bounty protocol that allows anyone to provide liquidity to bug bounties."
+      "description": "Permissionless, scalable, and open bug bounty protocol that allows anyone to provide liquidity to bug bounties.",
+      "moto": "We envision a decentralized future where DAOs, communities, and hackers work together for greater security and crypto adoption."
+    },
+    Projects: {
+      "title": "Projects on board"
     },
     Staker: {
       "title": "Secure, stake & farm $HATS",

@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import Welcome from "./components/Welcome/Welcome";
+import Projects from './components/Projects/Projects';
 import TheStaker from './components/TheStaker/TheStaker';
 import TheHacker from './components/TheHacker/TheHacker';
 import TheProject from './components/TheProject/TheProject';
@@ -14,6 +15,7 @@ export default function Landing() {
   return (
     <div className="landing-wrapper">
       <Welcome />
+      <Projects />
       <TheStaker />
       <TheHacker />
       <TheProject />
