@@ -20,6 +20,16 @@
         display: flex;
         flex-direction: column;
         color: $white;
+        .section-text-header-wrapper {
+          display: flex;
+          align-items: flex-end;
+          font-weight: bold;
+          margin-bottom: 15px;
+          font-size: $medium;
+          .section-header-icon {
+            margin-right: 10px;
+          }
+        }
         .section-title {
           font-size: $xxlarge;
           font-weight: 700;
@@ -29,17 +39,11 @@
           font-size: $large;
         }
       }
-      .section-image {
-
-      }
     }
   }
   .section:first-child {
     margin-top: unset;
   }
-  // .section:last-child {
-  //   margin-bottom: unset;
-  // }
 
   .title {
     color: $white;
@@ -62,6 +66,9 @@
           display: flex;
           flex-direction: column;
           margin-top: 35px;
+          .section-text-header-wrapper {
+            font-size: $xsmall;
+          }
           .section-title {
             font-size: $large;
             font-weight: 700;

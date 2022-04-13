@@ -29,16 +29,31 @@ export const translationEN = {
       "title": "Projects on board"
     },
     Staker: {
+      "section-title": "The Staker",
       "title": "Secure, stake & farm $HATS",
-      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n\n Become a protector of the chain"
+      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n Become a protector of the chain"
     },
     Hacker: {
+      "section-title": "White Hat Hackers",
       "title": "Do what you do best",
-      "description": "Anyone, anywhere can find vulnerabilities contribute to protocol protection in a fully decentralized manner."
+      "description": "Anyone, anywhere can find vulnerabilities contribute to protocol protection in a fully decentralized manner.",
+      "sub-title-1": "Market Advantages",
+      "text-1": "No KYC!",
+      "text-2": "On-chain bug submission",
+      "text-3": "On chain dispute resolution",
+      "text-4": "NFT rewards for your digital flex",
+      "text-5": "Monthly competitions and gamification vaults"
     },
     Project: {
+      "section-title": "Web 3.0 Projects and DAOs ",
       "title": "Protect your Protocol",
-      "description": "Create a smart bug bounty for on-going protection."
+      "description": "Create a smart bug bounty for on-going protection.",
+      "sub-title-1": "Increase security & trust",
+      "text-1": "within your DAO, and encourage community involvement",
+      "sub-title-2": "Save time",
+      "text-2": "Create a bug bounty vault with minimal effort and a few easy steps",
+      "sub-title-3": "Manage",
+      "text-3": "your bug bounty vault with automated committee tools that help you stay on track with vulnerability disclosures"
     }
   },
   NFTRouth: {

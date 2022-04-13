@@ -4,6 +4,22 @@
   .the-hacker-content {
     .section-text-wrapper-the-hacker {
       margin-left: 150px;
+      .the-hacker-subtitle {
+        font-weight: bold;
+        font-size: $medium;
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+      .the-hacker-advantage-element {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+          width: 45px;
+          height: 45px;
+          margin-right: 45px;
+        }
+      }
     }
   }
 }
@@ -14,6 +30,14 @@
       flex-direction: column !important;
       .section-text-wrapper-the-hacker {
         margin-left: unset;
+        .the-hacker-subtitle {
+          font-size: $small;
+        }
+        .the-hacker-advantage-element {
+          img {
+            margin-right: 15px;
+          }
+        }
       }
     }
   }
