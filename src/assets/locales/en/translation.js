@@ -49,11 +49,11 @@ export const translationEN = {
       "title": "Protect your Protocol",
       "description": "Create a smart bug bounty for on-going protection.",
       "sub-title-1": "Increase security & trust",
-      "text-1": "within your DAO, and encourage community involvement",
+      "text-1": "within your DAO, and encourage \n community involvement",
       "sub-title-2": "Save time",
-      "text-2": "Create a bug bounty vault with minimal effort and a few easy steps",
+      "text-2": "Create a bug bounty vault with minimal \n effort and a few easy steps",
       "sub-title-3": "Manage",
-      "text-3": "your bug bounty vault with automated committee tools that help you stay on track with vulnerability disclosures"
+      "text-3": "your bug bounty vault with automated \n committee tools that help you stay on track \n with vulnerability disclosures"
     }
   },
   NFTRouth: {

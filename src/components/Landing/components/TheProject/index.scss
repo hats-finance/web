@@ -1,0 +1,17 @@
+@import "../../../../constants/constants.scss";
+
+.the-project-wrapper {
+  .the-project-subtitle {
+    font-weight: bold;
+    font-size: $medium;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .the-project-wrapper {
+    .the-project-subtitle {
+      font-size: $small;
+    }
+  }
+}
