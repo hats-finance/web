@@ -23,7 +23,8 @@ export const translationEN = {
       "HATS.FINANCE": "HATS.FINANCE",
       "title": "Decentralized smart bug bounty marketplace",
       "description": "Permissionless, scalable, and open bug bounty protocol that allows anyone to provide liquidity to bug bounties.",
-      "moto": "We envision a decentralized future where DAOs, communities, and hackers work together for greater security and crypto adoption."
+      "moto": "We envision a decentralized future where DAOs, communities, and hackers work together for greater security and crypto adoption.",
+      "start": "START"
     },
     Projects: {
       "title": "Projects on board"
@@ -31,7 +32,8 @@ export const translationEN = {
     Staker: {
       "section-title": "The Staker",
       "title": "Secure, stake & farm $HATS",
-      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n Become a protector of the chain"
+      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n Become a protector of the chain",
+      "stake": "Stake"
     },
     Hacker: {
       "section-title": "White Hat Hackers",
@@ -42,7 +44,8 @@ export const translationEN = {
       "text-2": "On-chain bug submission",
       "text-3": "On chain dispute resolution",
       "text-4": "NFT rewards for your digital flex",
-      "text-5": "Monthly competitions and gamification vaults"
+      "text-5": "Monthly competitions and gamification vaults",
+      "action-btn": "Explore Bug Bounties"
     },
     Project: {
       "section-title": "Web 3.0 Projects and DAOs ",
@@ -54,6 +57,9 @@ export const translationEN = {
       "text-2": "Create a bug bounty vault with minimal \n effort and a few easy steps",
       "sub-title-3": "Manage",
       "text-3": "your bug bounty vault with automated \n committee tools that help you stay on track \n with vulnerability disclosures"
+    },
+    Summary: {
+      "action-btn": "Open a Smart Bug Bounty Vault"
     }
   },
   NFTRouth: {

@@ -1,5 +1,6 @@
 
 import { useTranslation } from "react-i18next";
+import { DAPP_LINK } from "../../../../constants/constants";
 import './index.scss';
 
 export default function TheHacker() {
@@ -37,6 +38,7 @@ export default function TheHacker() {
             <img src={require("../../../../assets/icons/landing/gamification.svg").default} alt="gamification" />
             <span>{t("Landing.Hacker.text-5")}</span>
           </div>
+          <button className="button bug-bounties" onClick={() => window.open(DAPP_LINK, '_blank')}>{t("Landing.Hacker.action-btn")}</button>
         </div>
       </div>
     </div>

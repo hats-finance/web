@@ -15,6 +15,7 @@ export default function Welcome() {
         </div>
         <img src={require("../../../../assets/images/landing/welcome.svg").default} className="section-image" alt="all users" />
       </div>
+      <button className="button start" onClick={() => document.getElementById("startStage")?.scrollIntoView({ behavior: "smooth" })}>{t("Landing.Welcome.start")}<img src={require("../../../../assets/icons/landing/down-arrow.svg").default} alt="arrow" /></button>
       <div className="moto">{t("Landing.Welcome.moto")}</div>
     </div>
   )

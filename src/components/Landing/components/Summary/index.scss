@@ -1,0 +1,25 @@
+@import "../../../../constants/constants.scss";
+
+.summary-wrapper {
+  .summary-content {
+    justify-content: center;
+    .smart-bug-bounty-btn {
+      height: 50px;
+      width: 600px;
+      align-self: flex-start;
+      margin-top: 50px;
+      font-size: $medium;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .summary-wrapper {
+    .summary-content {
+      .smart-bug-bounty-btn {
+        width: 100%;
+        font-size: $small;
+      }
+    }
+  }
+}

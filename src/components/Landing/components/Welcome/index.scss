@@ -8,6 +8,21 @@
     font-size: $xlarge;
     font-weight: 700;
   }
+  .start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width: 345px;
+    height: 50px;
+    font-size: $medium;
+    img {
+      margin-left: 5px;
+    }
+  }
   .moto {
     font-size: $large;
     font-style: italic;
@@ -25,6 +40,10 @@
     flex-direction: column;
     .hats-finance {
       font-size: $large;
+    }
+    .start {
+      width: calc(100% - 40px);
+      font-size: $small;
     }
     .moto {
       font-size: $small;

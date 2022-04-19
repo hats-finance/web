@@ -20,6 +20,13 @@
           margin-right: 45px;
         }
       }
+      .bug-bounties {
+        height: 50px;
+        width: 290px;
+        align-self: flex-start;
+        margin-top: 50px;
+        font-size: $medium;
+      }
     }
   }
 }
@@ -37,6 +44,10 @@
           img {
             margin-right: 15px;
           }
+        }
+        .bug-bounties {
+          width: 100%;
+          font-size: $small;
         }
       }
     }

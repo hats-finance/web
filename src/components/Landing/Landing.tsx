@@ -3,6 +3,7 @@ import Projects from './components/Projects/Projects';
 import TheStaker from './components/TheStaker/TheStaker';
 import TheHacker from './components/TheHacker/TheHacker';
 import TheProject from './components/TheProject/TheProject';
+import Summary from "./components/Summary/Summary";
 import Footer from "../Footer/Footer";
 import './index.scss';
 
@@ -14,6 +15,7 @@ export default function Landing() {
       <TheStaker />
       <TheHacker />
       <TheProject />
+      <Summary />
       <Footer />
     </div>
   )
