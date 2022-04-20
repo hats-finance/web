@@ -1,12 +1,12 @@
 @import "./constants/constants.scss";
 
 @font-face {
-  font-family: RobotoMono;
-  src: url(./assets/fonts/RobotoMono-VariableFont_wght.ttf);
+  font-family: SegoeUI;
+  src: url(./assets/fonts/Segoe-UI.ttf);
 }
 
 body {
-  font-family: RobotoMono;
-  background-color: $dark-blue;
+  font-family: SegoeUI;
+  background: linear-gradient(180deg, $blue-gradient 0%, $black-gradient 100%);
   margin: 0px;
 }

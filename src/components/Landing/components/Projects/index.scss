@@ -1,0 +1,54 @@
+@import "../../../../constants/constants.scss";
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  .projects-title {
+    align-self: flex-start;
+    color: $white;
+    margin-bottom: 30px;
+  }
+  .projects-elements-container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, 250px);
+    width: 100%;
+    justify-content: center;
+    .project-element-wrapper {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      color: $white;
+      .project-symbol {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+      }
+      .project-name {
+        cursor: pointer;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .projects-wrapper {
+    flex-direction: column !important;
+    .projects-title {
+      align-self: unset;
+    }
+    .projects-elements-container {
+      grid-template-columns: repeat(auto-fit, 50px);
+      .project-element-wrapper {
+        .project-symbol {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

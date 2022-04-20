@@ -1,0 +1,55 @@
+@import "../../../../constants/constants.scss";
+
+.the-hacker-wrapper {
+  .the-hacker-content {
+    .section-text-wrapper-the-hacker {
+      margin-left: 150px;
+      .the-hacker-subtitle {
+        font-weight: bold;
+        font-size: $medium;
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+      .the-hacker-advantage-element {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+          width: 45px;
+          height: 45px;
+          margin-right: 45px;
+        }
+      }
+      .bug-bounties {
+        height: 50px;
+        width: 290px;
+        align-self: flex-start;
+        margin-top: 50px;
+        font-size: $medium;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .the-hacker-wrapper {
+    .the-hacker-content {
+      flex-direction: column !important;
+      .section-text-wrapper-the-hacker {
+        margin-left: unset;
+        .the-hacker-subtitle {
+          font-size: $small;
+        }
+        .the-hacker-advantage-element {
+          img {
+            margin-right: 15px;
+          }
+        }
+        .bug-bounties {
+          width: 100%;
+          font-size: $small;
+        }
+      }
+    }
+  }
+}

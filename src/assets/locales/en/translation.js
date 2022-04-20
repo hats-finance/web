@@ -3,22 +3,11 @@ export const translationEN = {
   "FAQ": "FAQ",
   "Create Vault": "Create Vault",
   "App": "APP",
-  "Become a protector": "BECOME A PROTECTOR",
-  "Protector explained": "We offer every participant in the web3 \n ecosystem skin in the game, to ensure a \n more secure future for the users of \n Ethereum. Join the security effort by \n staking your tokens.",
-  "Deposit and claim Hats": "Deposit and claim Hats",
-  "Features title": "CREATING THE FUTURE OF SECURITY ON #ETHEREUM",
-  "#Decentralized": "#Decentralized",
-  "#Permissionless": "#Permissionless",
-  "#Anonymous": "#Anonymous",
-  "#HelloHatter": "Hello new hatter, \n Welcome to Hats.Finance, a decentralized bug bounty protocol that allows everyone to add liquidity to bug bounties while farming $HATS.  Hackers can responsibly disclose vulnerabilities without KYC & be rewarded with the highest prizes.",
-  "Happy hunting": "Happy hunting",
-  "Master Shredder hacker?": "Master Shredder hacker?",
   "Stay connected": "STAY CONNECTED",
   "Overview": "Overview",
   "Term of use": "Term of use",
   "Privacy Policy": "Privacy Policy",
   "NFTs": "NFTs",
-  "Launch app": "Launch app",
   "Docs": "Docs",
   "Learn more": "Learn more",
   "Protect my protocol": "PROTECT MY PROTOCOL",
@@ -28,6 +17,54 @@ export const translationEN = {
   "Community": "Community",
   "NFT": "NFT",
   "Artist": "Artist",
+
+  Landing: {
+    Welcome: {
+      "HATS.FINANCE": "HATS.FINANCE",
+      "title": "Decentralized smart bug bounty marketplace",
+      "description": "Permissionless, scalable, and open bug bounty protocol that allows anyone to provide liquidity to bug bounties.",
+      "moto": "We envision a decentralized future where DAOs, communities, and hackers work together for greater security and crypto adoption.",
+      "start": "START"
+    },
+    Projects: {
+      "title": "Projects on board"
+    },
+    Staker: {
+      "section-title": "The chain protector",
+      "title": "Secure, stake & farm $HATS",
+      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n Become a protector of the chain",
+      "stake": "Stake"
+    },
+    Hacker: {
+      "section-title": "White Hat Hackers",
+      "title": "Do what you do best",
+      "description": "Anyone, anywhere can find vulnerabilities contribute to protocol protection in a fully decentralized manner.",
+      "sub-title-1": "Market Advantages",
+      "text-1": "No KYC!",
+      "text-2": "On-chain bug submission",
+      "text-3": "On chain dispute resolution",
+      "text-4": "NFT rewards for your digital flex",
+      "text-5": "Monthly competitions and gamification vaults",
+      "action-btn": "Explore Bug Bounties"
+    },
+    Project: {
+      "section-title": "Web 3.0 Projects and DAOs ",
+      "title": "Protect your Protocol",
+      "description": "Create a smart bug bounty for on-going protection.",
+      "sub-title-1": "Increase security & trust",
+      "text-1": "Within your DAO, and encourage \n community involvement",
+      "sub-title-2": "Save time",
+      "text-2": "Create a bug bounty vault with minimal \n effort and a few easy steps",
+      "sub-title-3": "Manage",
+      "text-3": "Your bug bounty vault with automated \n committee tools that help you stay on track \n with vulnerability disclosures"
+    },
+    Summary: {
+      "web3": "Decentralized, scalable, permissionless, and  trustless.",
+      "dispute": "On-chain dispute mechanisms ",
+      "pay-bounty": "Pay bounty with project's token",
+      "action-btn": "Open a Smart Bug Bounty Vault"
+    }
+  },
   NFTRouth: {
     "Terms of Sale of NFTs": "Terms of Sale of NFTs",
     TabController: {

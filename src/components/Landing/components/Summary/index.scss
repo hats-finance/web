@@ -1,0 +1,57 @@
+@import "../../../../constants/constants.scss";
+
+.summary-wrapper {
+  .summary-content {
+    justify-content: center;
+    flex-direction: column;
+    .features-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $deep-blue-2;
+        color: $white;
+        justify-content: space-around;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 290px;
+        height: 250px;
+        margin: 0px 10px;
+        img {
+          width: 100px;
+        }
+      }
+    }
+    .smart-bug-bounty-btn {
+      height: 50px;
+      width: 600px;
+      align-self: flex-start;
+      margin: 100px auto 50px;
+      font-size: $medium;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .summary-wrapper {
+    .summary-content {
+      flex-direction: column !important;
+      .features-wrapper {
+        flex-direction: column;
+        .feature {
+          width: 100%;
+          margin: 20px 0px;
+        }
+      }
+      .smart-bug-bounty-btn {
+        width: 100%;
+        font-size: $small;
+        margin: 50px auto 0px;
+      }
+    }
+  }
+}

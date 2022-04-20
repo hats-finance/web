@@ -14,6 +14,7 @@
       flex-direction: column;
       margin: 50px 0;
       white-space: pre-line;
+      color: $white;
       .title {
         font-size: $medium;
         color: $white;
@@ -26,6 +27,7 @@
       align-items: center;
       margin: auto;
       max-width: $element-max-width;
+      margin-top: 50px;
       a {
         color: $turquoise;
       }
@@ -35,8 +37,12 @@
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .nft-wrapper {
+    padding-bottom: 0;
     .nft-content {
       padding: $mobile-element-padding;
+      section {
+        margin: 25px 0;
+      }
       .nft-footer-wrapper {
         flex-direction: column;
         align-items: center;
