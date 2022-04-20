@@ -30,7 +30,7 @@ export const translationEN = {
       "title": "Projects on board"
     },
     Staker: {
-      "section-title": "The Staker",
+      "section-title": "The chain protector",
       "title": "Secure, stake & farm $HATS",
       "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n Become a protector of the chain",
       "stake": "Stake"
@@ -52,13 +52,16 @@ export const translationEN = {
       "title": "Protect your Protocol",
       "description": "Create a smart bug bounty for on-going protection.",
       "sub-title-1": "Increase security & trust",
-      "text-1": "within your DAO, and encourage \n community involvement",
+      "text-1": "Within your DAO, and encourage \n community involvement",
       "sub-title-2": "Save time",
       "text-2": "Create a bug bounty vault with minimal \n effort and a few easy steps",
       "sub-title-3": "Manage",
-      "text-3": "your bug bounty vault with automated \n committee tools that help you stay on track \n with vulnerability disclosures"
+      "text-3": "Your bug bounty vault with automated \n committee tools that help you stay on track \n with vulnerability disclosures"
     },
     Summary: {
+      "web3": "Decentralized, scalable, permissionless, and  trustless.",
+      "dispute": "On-chain dispute mechanisms ",
+      "pay-bounty": "Pay bounty with project's token",
       "action-btn": "Open a Smart Bug Bounty Vault"
     }
   },

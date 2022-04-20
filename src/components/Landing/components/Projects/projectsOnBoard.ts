@@ -1,34 +1,42 @@
 export const PROJECTS_ON_BOARD = [
   {
     name: "dxDAO",
-    icon: "dxdao"
+    icon: "dxdao",
+    link: "https://dxdao.eth.link/"
   },
   {
     name: "FujiDAO",
-    icon: "fujidao"
+    icon: "fujidao",
+    link: "https://www.fujidao.org/"
   },
   {
     name: "Paraswap",
-    icon: "paraswap"
+    icon: "paraswap",
+    link: "https://www.paraswap.io/"
   },
   {
     name: "Liquity",
-    icon: "liquity"
+    icon: "liquity",
+    link: "https://www.liquity.org/"
   },
   {
     name: "B.protocol",
-    icon: "bprotocol"
+    icon: "bprotocol",
+    link: "https://www.bprotocol.org/"
   },
   {
     name: "UMA",
-    icon: "uma"
+    icon: "uma",
+    link: "https://umaproject.org/"
   },
   {
     name: "GoodDollar",
-    icon: "gooddollar"
+    icon: "gooddollar",
+    link: "https://www.gooddollar.org/"
   },
   {
     name: "Kleros",
-    icon: "kleros"
+    icon: "kleros",
+    link: "https://kleros.io/"
   }
 ]

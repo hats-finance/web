@@ -7,9 +7,9 @@ export default function Projects() {
 
   const projactsElements = PROJECTS_ON_BOARD.map(project => {
     return (
-      <div className="project-element-wrapper">
+      <div key={project.name} className="project-element-wrapper">
         <img src={require(`../../../../assets/icons/projects/${project.icon}.svg`).default} className="project-symbol" alt={project.name} />
-        <span>{project.name}</span>
+        <span onClick={() => window.open(project.link, '_blank')} className="project-name">{project.name}</span>
       </div>
     )
   })
