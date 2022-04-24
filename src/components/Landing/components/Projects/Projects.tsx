@@ -15,7 +15,7 @@ export default function Projects() {
   })
 
   return (
-    <div className="section">
+    <div className="section projects-section">
       <div className="section-content projects-wrapper">
         <div className="projects-title">{t("Landing.Projects.title")}</div>
         <div className="projects-elements-container">

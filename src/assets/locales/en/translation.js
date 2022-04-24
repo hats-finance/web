@@ -32,7 +32,7 @@ export const translationEN = {
     Staker: {
       "section-title": "The chain protector",
       "title": "Secure, stake & farm $HATS",
-      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n Become a protector of the chain",
+      "description": "Community and DAO members can provide liquidity to their favorite DAO bug bounty, securing and reducing the risk of hacks and exploits by stacking and farming $HAT tokens. \n\n Become a protector of the chain",
       "stake": "Stake"
     },
     Hacker: {

@@ -10,3 +10,9 @@ body {
   background: linear-gradient(180deg, $blue-gradient 0%, $black-gradient 100%);
   margin: 0px;
 }
+
+#document {
+  iframe {
+    display: none;
+  }
+}

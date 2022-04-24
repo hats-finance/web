@@ -7,6 +7,7 @@
     align-self: flex-end;
     margin-top: 50px;
     font-size: $medium;
+    margin-right: 50px;
   }
 }
 
@@ -15,6 +16,7 @@
     .stake {
       width: 100%;
       font-size: $small;
+      margin-right: unset;
     }
   }
 }
