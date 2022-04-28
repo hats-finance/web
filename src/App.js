@@ -3,6 +3,7 @@ import './App.scss';
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
 import NFT from "./components/NFT/NFT";
+import Gamification from "./components/Gamification/Gamification";
 import { SMALL_SCREEN_BREAKPOINT, ScreenSize, RoutePaths } from "./constants/constants";
 import { getScreenSize } from "./utils";
 import { Route, Switch } from "react-router-dom";
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path={RoutePaths.NFT}>
             <NFT />
+          </Route>
+          <Route path={RoutePaths.Gamification}>
+            <Gamification />
           </Route>
         </Switch>
       </div>

@@ -1,0 +1,17 @@
+@import "../../../../constants/constants.scss";
+
+.leader-board-wrapper {
+  display: flex;
+  max-width: $element-max-width;
+  margin: auto;
+  font-size: $xxlarge;
+  color: $white;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .leader-board-wrapper {
+    font-size: $xlarge;
+  }
+}

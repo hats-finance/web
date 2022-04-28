@@ -12,6 +12,7 @@ export default function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const links = <div className="links-wrapper">
+    <NavLink to={RoutePaths.Gamification} onClick={() => setToggleMenu(false)} className="header-link" activeClassName="selected">{t("Gamification.Gamification")}</NavLink>
     <NavLink to={RoutePaths.NFT} onClick={() => setToggleMenu(false)} className="header-link" activeClassName="selected">{t("NFT")}</NavLink>
     <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Docs")}</a>
     <a target="_blank" rel="noopener noreferrer" href={SocialLinks.Discord}>{t("Community")}</a>

@@ -1,0 +1,56 @@
+@import "../../constants/constants.scss";
+
+.gamification-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: $header-height 0;
+  .banner {
+    width: 100%;
+  }
+  .gamification-content {
+    padding: $element-padding;
+    section {
+      display: flex;
+      flex-direction: column;
+      margin: 50px 0;
+      white-space: pre-line;
+      color: $white;
+      .title {
+        font-size: $medium;
+        color: $white;
+        margin-bottom: 10px;
+      }
+    }
+    .gamification-footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      max-width: $element-max-width;
+      margin-top: 50px;
+      justify-content: flex-end;
+      a {
+        color: $turquoise;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .gamification-wrapper {
+    padding-bottom: 0;
+    .gamification-content {
+      padding: $mobile-element-padding;
+      section {
+        margin: 25px 0;
+      }
+      .gamification-footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        a {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

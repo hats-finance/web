@@ -1,5 +1,6 @@
 export enum RoutePaths {
-  NFT = "/nft"
+  NFT = "/nft",
+  Gamification = "/gamification"
 }
 
 export enum ScreenSize {
