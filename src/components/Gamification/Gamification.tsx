@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import About from "./components/About/About";
 import TabsController from "./components/TabsController/TabsController";
 import Game from "./components/Game/Game";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
 import SocialLinksPanel from "../SocialLinksPanel/SocialLinksPanel";
 import './index.scss';
+import { IPFS_PREFIX, ScreenSize } from "../../constants/constants";
+import { LayoutContext } from "../../App";
 
 export enum Tab {
   About,
@@ -12,7 +14,11 @@ export enum Tab {
   LeaderBoard
 }
 
+const DESKTOP_BANNER = "QmUWZ2SeZjLhSDnPFgShb2VXeJhpDN9ZrnNpPz4sNgdXYp";
+const MOBILE_BANNER = "QmQvufMzAWBjPu2jtLaK3jazK2y1H7vNSfPh7ZhHyESuAf";
+
 export default function Gamification() {
+  const { screenSize } = useContext(LayoutContext);
   const [currentTab, setCurrentTab] = useState(Tab.About);
 
   const renderContent = (currentTab: Tab) => {
@@ -28,7 +34,7 @@ export default function Gamification() {
 
   return (
     <div className="gamification-wrapper">
-      <img className="banner" src="https://hats-finance.mypinata.cloud/ipfs/QmUWZ2SeZjLhSDnPFgShb2VXeJhpDN9ZrnNpPz4sNgdXYp" alt="banner" />
+      <img className="banner" src={`${IPFS_PREFIX}/${screenSize === ScreenSize.Desktop ? DESKTOP_BANNER : MOBILE_BANNER}`} alt="banner" />
       <div className="gamification-content">
         <TabsController currentTab={currentTab} setCurrentTab={setCurrentTab} />
         {renderContent(currentTab)}
