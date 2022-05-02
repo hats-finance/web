@@ -8,10 +8,9 @@ export default function Game() {
     <div className="collections-wrapper">
       <section>
         <div className="title">{t("Gamification.Game.title-1")}</div>
+        <div className="sub-title">{t("Gamification.Game.sub-title-1")}</div>
         <div>{t("Gamification.Game.text-1")}</div>
-      </section>
-      <section>
-        <div className="title">{t("Gamification.Game.title-2")}</div>
+        <div className="sub-title">{t("Gamification.Game.sub-title-2")}</div>
         <div>{t("Gamification.Game.text-2")}</div>
       </section>
       <section>

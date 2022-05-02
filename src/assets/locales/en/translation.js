@@ -98,6 +98,8 @@ export const translationEN = {
   },
   Gamification: {
     "Gamification": "Gamification",
+    "gamification-vault": "GAMIFICATION VAULT",
+    "game-launch": "TO GAME #1 LAUNCH",
     TabController: {
       about: "WHAT IT'S ALL ABOUT",
       game: "GAME #1",
@@ -105,18 +107,19 @@ export const translationEN = {
     },
     About: {
       "title-1": "ABOUT",
-      "text-1": "The Hats.Finance Gamification Vault is a designed smart contract that hosts a vulnerability. If you find the vulnerability and play by the rules,you can be rewarded with the highest price. Finding a vulnerability is not an easy game; auditors can search for months without finding a worthy vulnerability. Hats.Finance is a decentralized bug bounty marketplace that desires to give hackers and auditors their fair share for their outstanding work in our space. For us, you are Heros! Go to our dApp and hunt vulnerabilities.",
+      "text-1": "The Hats.Finance Gamification Vault is a designed smart contract that hosts a vulnerability. If you find the vulnerability and play by the rules, you can be rewarded with the highest price. Finding a vulnerability is not an easy game; auditors can search for months without finding a worthy vulnerability. Hats.Finance is a decentralized bug bounty marketplace that desires to give hackers and auditors their fair share for their outstanding work in our space. For us, you are Heros! Go to our dApp and hunt vulnerabilities.",
       "title-2": "A REWARDING TEST GROUND",
-      "text-2": "When you test your abilities in a must-have vulnerability environment, you know that you have to be at your best in order to be the first to find a vulnerability Once the winner is announced, a postmortem will be released, and you can check where you could do better.",
-      "title-3": "It's Games - not a Game!",
-      "text-3": "We plan to write a new contract every two months (or less) to allow new and veteran hackers the place to go wild—a place where you can earn a decent first place and unique NFT. \n\n The NFT can generate access to must-have hacker's places. ",
+      "text-2": "When you test your abilities in a must-have vulnerability environment, you know that you have to be at your best in order to be the first to find a vulnerability. Once the winner is announced, a postmortem will be released, and you can check where you could do better.",
+      "title-3": "Hats Games",
+      "text-3": "We plan to write a new contract every two months (or less) to allow new and veteran hackers the place to go wild—a place where you can earn a decent first place and unique NFTs.",
       "btn-1": "CHECK OUT GAME#1"
     },
     Game: {
-      "title-1": "GAME #1 - OBTAIN THE FLAG:",
-      "text-1": "Game.sol encodes a fighting game where you can pitch decks of Mons against the deck of the flagholder, in order to obtain the flag: \n\n Anyone can join the game calling game.join() \n\n On joining, a player receives a deck of 3 pseudo-random Mons \n\n Each Mon is an NFT, and each Mon has powers: FIRE; WATER; AIR, and SPEED, each with a value in a range from [0,9] \n\n Users can try to improve their deck by swapping their Mons with other users, or by exchanging a Mon for a randomly generated new one for a swap to succeed, another player must put one of their Mons for sale at each moment, one player holds the flag other players can try to capture the flag by fighting the flag holder. \n\n Fight between single Mons: can fight in one of the 3 elements (FIRE, WATER, or AIR). The Mon with the highest value in that element wins. If the score is equal, the fastest monster wins. \n\n A fight between two decks consists of pairing the three Mons of the challenger with the 3 Mons of the flag holder, pseudo-randomly choosing 3 elements, and then having the 3 pairs fight in each of these elements.",
-      "title-2": "## THE HATS CHALLENGE:",
-      "text-2": "Obtain the flag: i.e. game.flag() should return an address that you control",
+      "title-1": "GAME #1",
+      "sub-title-1": "Task: Capture the Flag",
+      "text-1": "Game.sol encodes a card fighting game where the goal is to obtain the flag by pitching your deck of Mons against the deck of the flagholder and win the fight. \n\n --> Anyone can join the game calling game.join() \n\n --> On joining, a player receives a deck of 3 pseudo-random Mons. \n\n --> Each Mon is an NFT, and each Mon has powers: FIRE; WATER; AIR and SPEED, each with a value in a range from [0,9]. \n\n --> Users can try to improve their deck by swapping their Mons with other users, or by exchanging a Mon for a randomly generated new one. \n\n --> For a swap to succeed, another player must put one of their Mons for sale. \n\n --> At each moment, one player holds the flag. \n\n --> A fight between two Mons takes place with one of the 3 elements (FIRE, WATER or AIR). The Mon with the highest value in that element wins the fight. If the two Mons have the same strength, the Mon with the most SPEED wins. If the two Mons are excatly the same, the flag holder wins. \n\n --> A fight between two decks consists of pairing the three Mons of the challenger with the 3 Mons of the flag holder, pseudo-randomly choosing 3 elements, and then having the 3 pairs fight in each of these elements. \n\n",
+      "sub-title-2": "The Hats Challenge",
+      "text-2": "--> Obtain the flag: i.e. game.flagHolder() should return an address that you control.",
       "title-3": "PRIZES",
       "text-3": "Go to Hats dApp and find the vulnerability in the Gamification smart contract. \n\n Submit your finding in the dApp and win the prizes:  \n\n 1st place: 10,000 DAI & NFT \n\n 2nd place - 99:  NFT"
     },

@@ -7,6 +7,24 @@
   .banner {
     width: 100%;
   }
+  .countdown-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(77.99% 77.99% at 50% 50%, #ad51ff 0%, #993bab 52.23%, #ec7a88 80.08%, #0e0716 100%);
+    border: 1.19074px solid #d23ab5;
+    box-sizing: border-box;
+    box-shadow: -2.38148px 0px 39.2945px 23.8148px rgb(143 58 244 / 60%);
+    border-radius: 1000px;
+    top: 150px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-weight: bold;
+  }
   .gamification-content {
     padding: $element-padding;
     section {
@@ -19,6 +37,12 @@
         font-size: $medium;
         color: $white;
         margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .sub-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-decoration: underline;
       }
     }
     .gamification-footer-wrapper {

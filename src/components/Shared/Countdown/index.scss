@@ -1,0 +1,11 @@
+@import "../../../constants/constants.scss";
+
+.countdown-wrapper {
+  display: flex;
+  .time-element {
+    color: $white;
+    .value {
+      font-size: $xlarge;
+    }
+  }
+}
