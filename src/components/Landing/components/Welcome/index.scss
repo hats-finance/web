@@ -7,24 +7,6 @@
     font-size: $xlarge;
     font-weight: 700;
   }
-  .countdown-container {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(77.99% 77.99% at 50% 50%, #ad51ff 0%, #993bab 52.23%, #ec7a88 80.08%, #0e0716 100%);
-    border: 1.19074px solid #d23ab5;
-    box-sizing: border-box;
-    box-shadow: -2.38148px 0px 39.2945px 23.8148px rgb(143 58 244 / 60%);
-    border-radius: 1000px;
-    top: 500px;
-    right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $white;
-    font-weight: bold;
-  }
   .start {
     display: flex;
     align-items: center;
@@ -56,13 +38,6 @@
     flex-direction: column;
     .hats-finance {
       font-size: $large;
-    }
-    .countdown-container {
-      width: 100px;
-      height: 100px;
-      right: 20px;
-      top: 300px;
-      font-size: $tiny;
     }
     .start {
       width: calc(100% - 40px);
