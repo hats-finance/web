@@ -9,3 +9,13 @@
     }
   }
 }
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .countdown-wrapper {
+    .time-element {
+      .value {
+        font-size: $tiny;
+      }
+    }
+  }
+}

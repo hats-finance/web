@@ -8,8 +8,8 @@ import { IPFS_PREFIX, ScreenSize } from "../../constants/constants";
 import { LayoutContext } from "../../App";
 import Countdown from "../Shared/Countdown/Countdown";
 import { useTranslation } from "react-i18next";
-import './index.scss';
 import moment from "moment";
+import './index.scss';
 
 export enum Tab {
   About,
@@ -19,7 +19,7 @@ export enum Tab {
 
 const DESKTOP_BANNER = "QmUWZ2SeZjLhSDnPFgShb2VXeJhpDN9ZrnNpPz4sNgdXYp";
 const MOBILE_BANNER = "QmQvufMzAWBjPu2jtLaK3jazK2y1H7vNSfPh7ZhHyESuAf";
-const GAMIFICATION_BEGIN = "1651590000";
+export const GAMIFICATION_BEGIN = "1651590000";
 
 export default function Gamification() {
   const { screenSize } = useContext(LayoutContext);
@@ -40,7 +40,7 @@ export default function Gamification() {
   return (
     <div className="gamification-wrapper">
       <img className="banner" src={`${IPFS_PREFIX}/${screenSize === ScreenSize.Desktop ? DESKTOP_BANNER : MOBILE_BANNER}`} alt="banner" />
-      {screenSize === ScreenSize.Desktop && moment().isBefore(moment.unix(Number(GAMIFICATION_BEGIN))) && (
+      {moment().isBefore(moment.unix(Number(GAMIFICATION_BEGIN))) && (
         <div className="countdown-container">
           <span>{t("Gamification.gamification-vault")}</span>
           <Countdown endDate={GAMIFICATION_BEGIN} />
