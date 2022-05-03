@@ -107,11 +107,11 @@ export const translationEN = {
     },
     About: {
       "title-1": "ABOUT",
-      "text-1": "The Hats.Finance Gamification Vault is a designed smart contract that hosts a vulnerability. If you find the vulnerability and play by the rules, you can be rewarded with the highest price. Finding a vulnerability is not an easy game; auditors can search for months without finding a worthy vulnerability. Hats.Finance is a decentralized bug bounty marketplace that desires to give hackers and auditors their fair share for their outstanding work in our space. For us, you are Heros! Go to our dApp and hunt vulnerabilities.",
+      "text-1": "The Hats.Finance Gamification Vault offers a bounty for a Capture-the-flag competition. If you find the flag first and play by the rules, you will be rewarded with the highest prize. Finding a vulnerability is not an easy game. Hats.Finance is a decentralized bug bounty marketplace that desires to give hackers and auditors their fair share for their outstanding work in our space. \n\n For us, you are Heros! \n Go to our dApp and hunt vulnerabilities.",
       "title-2": "A REWARDING TEST GROUND",
-      "text-2": "When you test your abilities in a must-have vulnerability environment, you know that you have to be at your best in order to be the first to find a vulnerability. Once the winner is announced, a postmortem will be released, and you can check where you could do better.",
+      "text-2": "When you test your abilities in a smart contract that is known to contain a vulnerability, you know that you have to be at your best in order to be the first to find it. Once the winner is announced, a postmortem will be released, and you can check where you could have done better.",
       "title-3": "Hats Games",
-      "text-3": "We plan to write a new contract every two months (or less) to allow new and veteran hackers the place to go wild—a place where you can earn a decent first place and unique NFTs.",
+      "text-3": "We plan to write a new contract every two months (or less) to allow new and veteran security researchers and hackers to go wild—a competition where you can earn a reward while battle testing Hats’ decentralized bug bounty platform. With an additional chance to get a unique NFT that will be used as an access token to private hacker groups on Hats for each one of the first 10 to report the issue.",
       "btn-1": "CHECK OUT GAME#1"
     },
     Game: {
