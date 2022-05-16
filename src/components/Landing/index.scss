@@ -8,7 +8,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   .section {
-    margin: 100px 0;
     width: 100%;
     .section-content {
       display: flex;
@@ -59,7 +58,6 @@
 @media only screen and (max-width: $mobile-breakpoint) {
   .landing-wrapper {
     .section {
-      margin: 50px 0;
       .section-content {
         flex-direction: column-reverse;
         padding: 0 $mobile-element-padding;
