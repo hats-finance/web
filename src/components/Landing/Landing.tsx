@@ -6,6 +6,7 @@ import TheProject from './components/TheProject/TheProject';
 import Summary from "./components/Summary/Summary";
 import Footer from "../Footer/Footer";
 import './index.scss';
+import ContactUs from "./components/ContactUs/ContactUs";
 
 export default function Landing() {
   return (
@@ -16,6 +17,7 @@ export default function Landing() {
       <TheHacker />
       <TheProject />
       <Summary />
+      <ContactUs />
       <Footer />
     </div>
   )
