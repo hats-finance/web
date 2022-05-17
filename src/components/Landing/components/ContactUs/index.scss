@@ -10,7 +10,7 @@
     .contactus-form {
       width: 100%;
       max-width: 386px;
-      &__title {
+      .contactus-form__title {
         font-size: 36px;
         line-height: 48px;
         font-weight: 700;
@@ -18,7 +18,7 @@
         text-align: center;
         color: $white;
       }
-      &__subtitle {
+      .contactus-form__subtitle {
         font-size: $large;
         line-height: 32px;
         font-weight: 700;
@@ -26,7 +26,7 @@
         text-align: center;
         color: $white;
       }
-      &__element {
+      .contactus-form__element {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
@@ -46,6 +46,12 @@
           }
         }
       }
+      .contactus-form__button {
+        height: 40px;
+        width: 100%;
+        font-size: $medium;
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -54,21 +60,24 @@
   .contactus-wrapper {
     .section-content {
       .contactus-form {
-        &__title {
+        .contactus-form__title {
           font-size: $large;
           line-height: 32px;
           text-align: left;
         }
-        &__subtitle {
+        .contactus-form__subtitle {
           font-size: $xsmall;
           line-height: 20px;
           text-align: left;
         }
-        &__element {
+        .contactus-form__element {
           label {
             font-size: $xsmall;
             line-height: 20px;
           }
+        }
+        .contactus-form__button {
+          font-size: $small;
         }
       }
     }

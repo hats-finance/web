@@ -8,22 +8,27 @@ export default function ContactUs() {
     <div className="section contactus-wrapper">
       <div className="section-content">
         <div className="contactus-form">
-          <p className="contactus-form__title">Stay up to date</p>
+          <p className="contactus-form__title">
+            {t("Landing.ContactUs.title")}
+          </p>
           <p className="contactus-form__subtitle">
-            Subscribe to our newsletter
+            {t("Landing.ContactUs.subtitle")}
           </p>
           <div className="contactus-form__element">
-            <label>Name</label>
+            <label>{t("Landing.ContactUs.name")}</label>
             <input type="text" />
           </div>
           <div className="contactus-form__element">
-            <label>E-mail</label>
+            <label>{t("Landing.ContactUs.email")}</label>
             <input type="text" />
           </div>
           <div className="contactus-form__element">
-            <label>Position</label>
+            <label>{t("Landing.ContactUs.position")}</label>
             <input type="text" />
           </div>
+          <button className="button contactus-form__button">
+            {t("Landing.ContactUs.action-btn")}
+          </button>
         </div>
       </div>
     </div>
