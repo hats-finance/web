@@ -1,8 +1,8 @@
 @import "../../../../constants/constants.scss";
 
 .projects-section {
-  background: linear-gradient(90deg, #10052f 0.18%, rgba(22, 23, 43, 0) 99.83%, rgba(22, 23, 43, 0) 99.83%);
-  padding: 100px 0px;
+  background: linear-gradient(89.94deg, #110630 -26.64%, rgba(22, 23, 43, 0) 99.95%);
+  padding: 50px 0px;
   .projects-wrapper {
     display: flex;
     flex-direction: column;
@@ -41,6 +41,7 @@
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .projects-section {
+    background: linear-gradient(90.29deg, #160055 -5.99%, rgba(22, 23, 43, 0) 242.35%, rgba(22, 23, 43, 0) 242.35%);
     padding: 50px 0px;
     .projects-wrapper {
       flex-direction: column !important;

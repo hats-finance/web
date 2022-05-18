@@ -63,7 +63,15 @@ export const translationEN = {
       "dispute": "On-chain dispute mechanisms ",
       "pay-bounty": "Pay bounty with project's token",
       "action-btn": "Open a Smart Bug Bounty Vault"
-    }
+    },
+    ContactUs: {
+      "title": "Stay up to date",
+      "subtitle": "Subscribe to our newsletter",
+      "name": "Name",
+      "email": "E-mail",
+      "position": "Position",
+      "action-btn": "Send"
+    },
   },
   NFTRouth: {
     "Terms of Sale of NFTs": "Terms of Sale of NFTs",
