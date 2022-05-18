@@ -45,7 +45,7 @@
           padding: 0 16px;
           outline: none;
           &.invalid {
-            border-color: rgb(220 38 38);
+            border-color: $red;
           }
         }
       }

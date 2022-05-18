@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { validateEmail } from "../../../../utils";
 import "./index.scss";
 
 export default function ContactUs() {
@@ -10,17 +11,14 @@ export default function ContactUs() {
   const [position, setPosition] = useState("");
   const [sendDisabled, setSendDisabled] = useState(true);
 
-  const validateEmail = (email: string) => {
-    // eslint-disable-next-line no-useless-escape
-    const regex = /\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi;
-    return regex.test(email);
-  };
-
   useEffect(() => {
     const emailInvalid = !validateEmail(email);
     setEmailInvalid(emailInvalid);
-    if (!emailInvalid && name && email && position) setSendDisabled(false);
-    else setSendDisabled(true);
+    if (!emailInvalid && name && email && position) {
+      setSendDisabled(false)
+    } else {
+      setSendDisabled(true);
+    }
   }, [name, email, position]);
 
   return (
