@@ -38,5 +38,15 @@ export const PROJECTS_ON_BOARD = [
     name: "Kleros",
     icon: "kleros",
     link: "https://kleros.io/"
+  },
+  {
+    name: "Idle.finance",
+    icon: "kleros",
+    link: "https://idle.finance"
+  },
+  {
+    name: "Tempus.finance",
+    icon: "kleros",
+    link: "https://tempus.finance"
   }
 ]
