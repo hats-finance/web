@@ -47,6 +47,7 @@
       }
       .projects-elements-container {
         grid-template-columns: repeat(auto-fit, 50px);
+        grid-gap: 60px;
         .project-element-wrapper {
           .project-symbol {
             width: 50px;

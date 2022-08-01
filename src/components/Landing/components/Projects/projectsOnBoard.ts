@@ -41,12 +41,17 @@ export const PROJECTS_ON_BOARD = [
   },
   {
     name: "Idle.finance",
-    icon: "kleros",
+    icon: "idle",
     link: "https://idle.finance"
   },
   {
     name: "Tempus.finance",
-    icon: "kleros",
+    icon: "tempus",
     link: "https://tempus.finance"
+  },
+  {
+    name: "Hats.finance",
+    icon: "hats",
+    link: "https://hats.finance"
   }
 ]
