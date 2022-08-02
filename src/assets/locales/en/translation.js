@@ -36,7 +36,7 @@ export const translationEN = {
       "stake": "Stake"
     },
     Hacker: {
-      "section-title": "White Hat Hackers",
+      "section-title": "Security experts & white hats hackers",
       "title": "Do what you do best",
       "description": "Anyone, anywhere can find vulnerabilities contribute to protocol protection in a fully decentralized manner.",
       "sub-title-1": "Market Advantages",

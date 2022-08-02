@@ -5,6 +5,10 @@
   src: url(./assets/fonts/Segoe-UI.ttf);
 }
 
+html {
+  background-color: $deep-blue;
+}
+
 body {
   font-family: SegoeUI;
   background: linear-gradient(180deg, $blue-gradient 0%, $black-gradient 100%);
