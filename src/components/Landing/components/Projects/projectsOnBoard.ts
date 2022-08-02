@@ -2,7 +2,7 @@ export const PROJECTS_ON_BOARD = [
   {
     name: "dxDAO",
     icon: "dxdao",
-    link: "https://dxdao.eth.link/"
+    link: "https://dxdao.eth.limo"
   },
   {
     name: "FujiDAO",
