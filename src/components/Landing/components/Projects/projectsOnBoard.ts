@@ -2,7 +2,7 @@ export const PROJECTS_ON_BOARD = [
   {
     name: "dxDAO",
     icon: "dxdao",
-    link: "https://dxdao.eth.link/"
+    link: "https://dxdao.eth.limo"
   },
   {
     name: "FujiDAO",
@@ -38,5 +38,20 @@ export const PROJECTS_ON_BOARD = [
     name: "Kleros",
     icon: "kleros",
     link: "https://kleros.io/"
+  },
+  {
+    name: "Idle.finance",
+    icon: "idle",
+    link: "https://idle.finance"
+  },
+  {
+    name: "Tempus.finance",
+    icon: "tempus",
+    link: "https://tempus.finance"
+  },
+  {
+    name: "Hats.finance",
+    icon: "hats",
+    link: "https://hats.finance"
   }
 ]
