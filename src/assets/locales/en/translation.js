@@ -103,7 +103,7 @@ export const translationEN = {
     TabController: {
       about: "WHAT IT'S ALL ABOUT",
       game: "GAME #1",
-      leaderBoard: "LEADER BOARD"
+      leaderBoard: "LEADERBOARD"
     },
     About: {
       "title-1": "ABOUT",
