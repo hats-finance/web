@@ -68,9 +68,20 @@ export const translationEN = {
   NFTRouth: {
     "Terms of Sale of NFTs": "Terms of Sale of NFTs",
     TabController: {
+      embassyCollection: "EMBASSY COLLECTION",
       airdrop: "CROWCLAN AIRDROP",
       collections: "COLLECTIONS",
       forArtists: "CALL FOR ARTISTS"
+    },
+    EmbassyCollection: {
+      "section-1-title": "PROOF OF CONTRIBUTION NFT",
+      "section-1-text": "The Embassy collection is part of the Hats airdrop machine. Each of the NFT types serves as ‘proof of contribution’ NFT. \n\n Hats’ ecosystem is composed of builders, community members, and an array of security experts that contribute to the growth of a project. Each one of these players is essential to the safety of the project and the broader DeFi space. The Embassy collection NFT’s have been created to recognize the different contributions people have made to Hats and the ecosystem as a whole. They are akin to badges of honor that recognize those who are doing their bit to bring greater trust and security to the crypto space.",
+      "section-2-title": "THE PROTECTOR OF THE CHAIN NFT",
+      "section-2-text": "The Protector of the Chain NFT collection is designed to reward those who back up their belief and trust in a project’s team, community, and vision by investing in the protocol’s security. Those users who are willing to participate in the creation of a more secure Web3 space in this way are what we call Protectors of the Chain. Thank you for taking security seriously and contributing to protecting your and others’ best interests.",
+      "section-3-title": "THE HACKER NFT",
+      "section-3-text": "While the cryptosphere often gets compared to the Wild West, it would be much less secure without the goodwill and extraordinary skills of white hat hackers and other security professionals. We believe such Web3 contributors are wizard-like heroes, defending the ecosystem with their intelligence and creativity for the benefit of all legitimate stakeholders. If you are such a contributor, thank you for making our space safer.",
+      "section-4-title": "THE MOTHER NFT",
+      "section-4-text": "The Mother NFT collection highlights and honors the creators' of Web3. Those of you who identify as a parent to one or more protocols are likely to recognize how important it is to protect what you have created. Thank you for taking security seriously and for doing your best to protect your protocol and its family of stakeholders.",
     },
     Airdrop: {
       "Once a Crow": "ONCE A CROW - ALWAYS PART OF THE CLAN!",

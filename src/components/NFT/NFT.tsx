@@ -8,20 +8,24 @@ import { LayoutContext } from "../../App";
 import { useTranslation } from "react-i18next";
 import SocialLinksPanel from "../SocialLinksPanel/SocialLinksPanel";
 import './index.scss';
+import EmbassyCollection from "./components/EmbassyCollection/EmbassyCollection";
 
 export enum Tab {
+  EmbassyCollection,
   Airdrop,
   Collections,
   ForArtists
 }
 
 export default function NFT() {
-  const [currentTab, setCurrentTab] = useState(Tab.Airdrop);
+  const [currentTab, setCurrentTab] = useState(Tab.EmbassyCollection);
   const { screenSize } = useContext(LayoutContext);
   const { t } = useTranslation();
 
   const renderContent = (currentTab: Tab) => {
     switch (currentTab) {
+      case Tab.EmbassyCollection:
+        return <EmbassyCollection />;
       case Tab.Airdrop:
         return <Airdrop />;
       case Tab.Collections:
