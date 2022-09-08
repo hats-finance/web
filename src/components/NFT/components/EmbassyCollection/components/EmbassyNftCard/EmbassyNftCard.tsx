@@ -3,7 +3,7 @@ import { IPFS_PREFIX } from "../../../../../../constants/constants";
 import "./index.scss";
 
 interface IProps {
-  nftData: { project: string, role: string, tier?: string };
+  nftData: { project: string, role: string, tier: string };
 }
 
 const Tiers = {
@@ -26,12 +26,10 @@ export default function EmbassyNftCard({ nftData }: IProps) {
           <div className="embassy-nft-card__info-element-title">{t("NFTRouth.EmbassyCollection.EmbassyNftCard.vault-embassy")}</div>
           <div className="embassy-nft-card__info-element-value">{nftData.project}</div>
         </div>
-        {nftData.tier && (
-          <div className="embassy-nft-card__info-element">
-            <div className="embassy-nft-card__info-element-title">{t("NFTRouth.EmbassyCollection.EmbassyNftCard.tier")}</div>
-            <div className="embassy-nft-card__info-element-value">{(Tiers as any)[nftData.tier]} {t("NFTRouth.EmbassyCollection.EmbassyNftCard.tier-text")}</div>
-          </div>
-        )}
+        <div className="embassy-nft-card__info-element">
+          <div className="embassy-nft-card__info-element-title">{t("NFTRouth.EmbassyCollection.EmbassyNftCard.tier")}</div>
+          <div className="embassy-nft-card__info-element-value">{(Tiers as any)[nftData.tier]} {t("NFTRouth.EmbassyCollection.EmbassyNftCard.tier-text")}</div>
+        </div>
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ export default function Airdrop() {
         <div>{t("NFTRouth.Airdrop.The Crow explained")}</div>
       </section>
       <span>{t("Artist")}: <a target="_blank" rel="noopener noreferrer" href={ARTIST_LINK}>Shira Noc</a></span>
-      <button className="button fill to-nft-airdrop" onClick={() => window.open(`${DAPP_LINK}/airdrop`, '_blank')}>{t("NFTRouth.Airdrop.Check Your Eligibility")}</button>
+      <button className="button fill to-nft-airdrop" onClick={() => window.open(`${DAPP_LINK}/airdrop_machine`, '_blank')}>{t("NFTRouth.Airdrop.Check Your Eligibility")}</button>
       <span className="crow-moto">{t("NFTRouth.Airdrop.Crow Moto")}</span>
       <section>
         <span className="title">{t("NFTRouth.Airdrop.Featured")}</span>
