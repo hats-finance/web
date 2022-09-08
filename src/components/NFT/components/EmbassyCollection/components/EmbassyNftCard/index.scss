@@ -3,23 +3,24 @@
 .embassy-nft-card-wrapper {
   border: 1px solid $blue-2;
   border-radius: 13px;
-  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   img {
-    width: 150px;
-    height: 300px;
+    width: -webkit-fill-available;
+    max-width: 190px;
+    padding: 30px;
   }
   .embassy-nft-card__info-container {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 20px;
     width: 100%;
-    //border-top: 1px solid $blue-3;
+    border-top: 1px solid $blue-3;
+    box-sizing: border-box;
     .embassy-nft-card__info-title {
-      //font-size: $small;
+      color: $white;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 10px;
@@ -29,12 +30,13 @@
       flex-direction: column;
       margin: 5px 0;
       .embassy-nft-card__info-element-title {
-        //color: $committee-blue;
-        //font-size: $xxsmall;
+        color: $turquoise-2;
+        font-size: $xxsmall;
         font-style: italic;
       }
       .embassy-nft-card__info-element-value {
         text-transform: capitalize;
+        color: $white;
       }
     }
   }
