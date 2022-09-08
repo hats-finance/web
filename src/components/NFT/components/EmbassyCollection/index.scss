@@ -5,4 +5,11 @@
   flex-direction: column;
   max-width: $element-max-width;
   margin: auto;
+  .embassy-collection__nfts-container {
+    display: grid;
+    grid-gap: 73px;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
