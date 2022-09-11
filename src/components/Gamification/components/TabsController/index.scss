@@ -1,6 +1,6 @@
 @import "../../../../constants/constants.scss";
 
-.tabs-controller-wrapper {
+.gamification-tabs-controller-wrapper {
   display: flex;
   justify-content: space-around;
   margin-bottom: 80px;
@@ -28,12 +28,12 @@
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.tabs-controller-wrapper::-webkit-scrollbar {
+.gamification-tabs-controller-wrapper::-webkit-scrollbar {
   display: none;
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .tabs-controller-wrapper {
+  .gamification-tabs-controller-wrapper {
     margin-bottom: 20px;
     margin-right: -20px;
     margin-left: -20px;
