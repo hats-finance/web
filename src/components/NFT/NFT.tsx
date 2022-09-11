@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import SocialLinksPanel from "../SocialLinksPanel/SocialLinksPanel";
 import './index.scss';
 import EmbassyCollection from "./components/EmbassyCollection/EmbassyCollection";
+import EmbassyBanner from "../../assets/images/nft/embassy-banner.svg";
 
 export enum Tab {
   EmbassyCollection,
@@ -35,9 +36,11 @@ export default function NFT() {
     }
   }
 
+  const banner = currentTab === Tab.Airdrop ? `${IPFS_PREFIX}/${IPFS_ASSETS}/${screenSize === ScreenSize.Desktop ? "New%20website%20banner" : "Mobile%20banner"}.gif` : EmbassyBanner;
+
   return (
     <div className="nft-wrapper">
-      <img className="banner" src={`${IPFS_PREFIX}/${IPFS_ASSETS}/${screenSize === ScreenSize.Desktop ? "New%20website%20banner" : "Mobile%20banner"}.gif`} alt="banner" />
+      <img className="banner" src={banner} alt="banner" />
       <div className="nft-content">
         <TabsController currentTab={currentTab} setCurrentTab={setCurrentTab} />
         {renderContent(currentTab)}
