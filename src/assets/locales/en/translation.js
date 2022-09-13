@@ -17,7 +17,11 @@ export const translationEN = {
   "Community": "Community",
   "NFT": "NFT",
   "Artist": "Artist",
-
+  AirdropPrompt: {
+    "text-1": "NEW",
+    "text-2": "AIRDROP MACHINE IS LIVE NOW",
+    "text-3": "CHECK YOUR ELIGIBILITY"
+  },
   Landing: {
     Welcome: {
       "HATS.FINANCE": "HATS.FINANCE",

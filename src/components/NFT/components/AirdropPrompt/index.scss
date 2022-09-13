@@ -1,0 +1,53 @@
+@import "../../../../constants/constants.scss";
+
+.airdrop-prompt-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 30px 30px;
+  .airdrop-prompt__new {
+    color: $white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    .airdrop-prompt__new__dot {
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: $red-1;
+      margin-right: 6px;
+    }
+  }
+  .airdrop-prompt__title {
+    color: $green-1;
+    font-weight: bold;
+    font-size: $large;
+  }
+  .airdrop-prompt__nft-example {
+    width: 200px;
+    align-self: center;
+    margin: 32px 0;
+  }
+  .airdrop-prompt__to-airdrop-machine-btn {
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    align-self: center;
+    background-color: $green-1;
+    color: $deep-blue;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .airdrop-prompt-wrapper {
+    height: 90%;
+    padding-bottom: 0;
+    .airdrop-prompt__nft-example {
+      margin: auto;
+      width: 90%;
+    }
+    .airdrop-prompt__to-airdrop-machine-btn {
+      margin-top: auto;
+    }
+  }
+}
