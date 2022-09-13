@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { DAPP_LINK } from "../../../../constants/constants";
 import EmbassyNftCard from "./components/EmbassyNftCard/EmbassyNftCard";
 import "./index.scss";
 
@@ -47,6 +48,7 @@ export default function EmbassyCollection() {
         <div className="title">{t("NFTRouth.EmbassyCollection.section-4-title")}</div>
         <div>{t("NFTRouth.EmbassyCollection.section-4-text")}</div>
       </section>
+      <button className="button embassy-collection__to-airdrop-machine-btn" onClick={() => window.open(`${DAPP_LINK}/airdrop_machine`, '_blank')}>{t("NFTRouth.EmbassyCollection.dapp-button")}</button>
       <span>{t("Artist")}: <a target="_blank" rel="noopener noreferrer" href={ARTIST_LINK}>Rafahu</a></span>
       <div className="embassy-collection__nfts-container">
         {nfts}

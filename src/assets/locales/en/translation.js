@@ -82,6 +82,7 @@ export const translationEN = {
       "section-3-text": "While the cryptosphere often gets compared to the Wild West, it would be much less secure without the goodwill and extraordinary skills of white hat hackers and other security professionals. We believe such Web3 contributors are wizard-like heroes, defending the ecosystem with their intelligence and creativity for the benefit of all legitimate stakeholders. If you are such a contributor, thank you for making our space safer.",
       "section-4-title": "THE MOTHER NFT",
       "section-4-text": "The Mother NFT collection highlights and honors the creators' of Web3. Those of you who identify as a parent to one or more protocols are likely to recognize how important it is to protect what you have created. Thank you for taking security seriously and for doing your best to protect your protocol and its family of stakeholders.",
+      "dapp-button": "CHECK YOUR ELIGIBILITY",
       EmbassyNftCard: {
         "vault-embassy": "Vault Embassy",
         "tier": "Level of trust",
