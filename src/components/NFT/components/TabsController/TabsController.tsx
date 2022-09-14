@@ -17,18 +17,17 @@ export default function TabsController({ currentTab, setCurrentTab }: IProps) {
 
   const handleClick = (tab: Tab) => {
     setCurrentTab(tab);
-    /** TODO: find a robust way to handle the scrolling to */
     if (screenSize === ScreenSize.Mobile) {
-      const maxLeftScroll = tabsWrapperElement.current?.clientWidth - tabsWrapperElement.current?.scrollWidth;
+      const containerWidth = tabsWrapperElement.current.offsetWidth;
       switch (tab) {
         case Tab.EmbassyCollection:
-          return tabsWrapperElement.current.scrollLeft = maxLeftScroll;
+          return tabsWrapperElement.current.scrollTo(0, 0);
         case Tab.Airdrop:
-          return tabsWrapperElement.current.scrollLeft = maxLeftScroll + 100;
+          return tabsWrapperElement.current.scrollTo(containerWidth / 3, 0);
         case Tab.Collections:
-          return tabsWrapperElement.current.scrollLeft = -maxLeftScroll + 200;
+          return tabsWrapperElement.current.scrollTo(containerWidth / 1.5, 0);
         case Tab.ForArtists:
-          return tabsWrapperElement.current.scrollLeft = -maxLeftScroll;
+          return tabsWrapperElement.current.scrollTo(containerWidth, 0);
       }
     }
   }
