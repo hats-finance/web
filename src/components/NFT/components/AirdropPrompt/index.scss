@@ -35,6 +35,11 @@
     background-color: $green-1;
     color: $deep-blue;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }
 
@@ -45,9 +50,6 @@
     .airdrop-prompt__nft-example {
       margin: auto;
       width: 90%;
-    }
-    .airdrop-prompt__to-airdrop-machine-btn {
-      margin-top: auto;
     }
   }
 }

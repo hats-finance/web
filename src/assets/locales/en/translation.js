@@ -17,6 +17,9 @@ export const translationEN = {
   "Community": "Community",
   "NFT": "NFT",
   "Artist": "Artist",
+  Header: {
+    "new": "NEW"
+  },
   AirdropPrompt: {
     "text-1": "NEW",
     "text-2": "AIRDROP MACHINE IS LIVE NOW",
