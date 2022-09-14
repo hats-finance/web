@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 30px 30px 30px;
+  overflow-x: hidden;
   .airdrop-prompt__new {
     color: $white;
     display: flex;
@@ -19,13 +20,11 @@
   }
   .airdrop-prompt__title {
     color: $green-1;
-    font-weight: bold;
     font-size: $large;
+    font-family: SegoeUI-bold;
   }
   .airdrop-prompt__nft-example {
-    width: 200px;
     align-self: center;
-    margin: 32px 0;
   }
   .airdrop-prompt__to-airdrop-machine-btn {
     width: 350px;
@@ -34,7 +33,7 @@
     align-self: center;
     background-color: $green-1;
     color: $deep-blue;
-    font-weight: bold;
+    font-family: SegoeUI-bold;
     border: none;
     cursor: pointer;
     &:hover {
@@ -47,9 +46,5 @@
   .airdrop-prompt-wrapper {
     height: 90%;
     padding-bottom: 0;
-    .airdrop-prompt__nft-example {
-      margin: auto;
-      width: 90%;
-    }
   }
 }

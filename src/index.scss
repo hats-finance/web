@@ -5,6 +5,11 @@
   src: url(./assets/fonts/Segoe-UI.ttf);
 }
 
+@font-face {
+  font-family: SegoeUI-bold;
+  src: url(./assets/fonts/Segoe-UI-bold.ttf);
+}
+
 html {
   background-color: $deep-blue;
 }

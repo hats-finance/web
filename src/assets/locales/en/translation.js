@@ -20,6 +20,11 @@ export const translationEN = {
   Header: {
     "new": "NEW"
   },
+  AirdropBar: {
+    "text-1": "NEW",
+    "text-2": "Airdrop Machine is live now",
+    "text-3": "LEARN MORE"
+  },
   AirdropPrompt: {
     "text-1": "NEW",
     "text-2": "AIRDROP MACHINE IS LIVE NOW",

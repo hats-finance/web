@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { DAPP_LINK } from "../../../../constants/constants";
-import NftExample from "../../../../assets/images/nft/nft-example.jpeg";
+import NftExample from "../../../../assets/images/nft/nft-example.svg";
 import "./index.scss";
 
 export default function AirdropPrompt() {
