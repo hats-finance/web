@@ -25,7 +25,7 @@ export default function EmbassyNftCard({ nftData }: IProps) {
     return (
       ReactDOM.createPortal(
         <div className="embassy-nft-card-full-screen-wrapper">
-          <button onClick={() => setFullScreen(false)} className="button embassy-nft-card-full-screen__close-btn">&times;</button>
+          <button onClick={() => setFullScreen(false)} className="embassy-nft-card-full-screen__close-btn">&times;</button>
           <div className="embassy-nft-card-full-screen__container">
             {media}
           </div>
