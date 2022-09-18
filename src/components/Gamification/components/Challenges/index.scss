@@ -7,18 +7,25 @@
   margin: auto;
   max-width: 600px;
   .challenges__select {
-    background: none;
-    border: 1px solid $turquoise-3;
-    width: 160px;
-    color: $white;
-    padding: 10px;
+    color: $white !important;
+  }
+  .ctf-2-wrapper {
+    display: flex;
+    flex-direction: column;
+    .ctf-2-button {
+      margin: auto;
+      width: 420px;
+      height: 40px;
+    }
   }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
   .challenges-wrapper {
-    .challenges__select {
-      width: 100%;
+    .ctf-2-wrapper {
+      .ctf-2-button {
+        width: 100%;
+      }
     }
   }
 }
