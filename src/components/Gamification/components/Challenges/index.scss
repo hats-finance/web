@@ -1,21 +1,23 @@
 @import "../../../../constants/constants.scss";
 
-.about-wrapper {
+.challenges-wrapper {
   display: flex;
   flex-direction: column;
   max-width: $element-max-width;
   margin: auto;
   max-width: 600px;
-  .go-to-game-btn {
-    width: 500px;
-    height: 50px;
-    margin: auto;
+  .challenges__select {
+    background: none;
+    border: 1px solid $turquoise-3;
+    width: 160px;
+    color: $white;
+    padding: 10px;
   }
 }
 
 @media only screen and (max-width: $mobile-breakpoint) {
-  .about-wrapper {
-    .go-to-game-btn {
+  .challenges-wrapper {
+    .challenges__select {
       width: 100%;
     }
   }

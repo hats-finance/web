@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
-import About from "./components/About/About";
+import Challenges from "./components/Challenges/Challenges";
 import TabsController from "./components/TabsController/TabsController";
-//import Game from "./components/Game/Game";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
 import SocialLinksPanel from "../SocialLinksPanel/SocialLinksPanel";
 import { IPFS_PREFIX, ScreenSize } from "../../constants/constants";
@@ -12,27 +11,23 @@ import moment from "moment";
 import './index.scss';
 
 export enum Tab {
-  About,
-  Game,
+  Challenges,
   LeaderBoard
 }
 
 const DESKTOP_BANNER = "QmUWZ2SeZjLhSDnPFgShb2VXeJhpDN9ZrnNpPz4sNgdXYp";
 const MOBILE_BANNER = "QmQvufMzAWBjPu2jtLaK3jazK2y1H7vNSfPh7ZhHyESuAf";
-const GAME_LINK = "https://github.com/hats-finance/games";
 export const GAMIFICATION_BEGIN = "1651590000";
 
 export default function Gamification() {
   const { screenSize } = useContext(LayoutContext);
   const { t } = useTranslation();
-  const [currentTab, setCurrentTab] = useState(Tab.About);
+  const [currentTab, setCurrentTab] = useState(Tab.Challenges);
 
   const renderContent = (currentTab: Tab) => {
     switch (currentTab) {
-      case Tab.About:
-        return <About switchToGame={() => window.open(GAME_LINK, '_blank')} />;
-      // case Tab.Game:
-      //   return <Game />;
+      case Tab.Challenges:
+        return <Challenges />;
       case (Tab.LeaderBoard):
         return <LeaderBoard />;
     }

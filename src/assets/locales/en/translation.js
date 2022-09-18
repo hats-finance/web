@@ -125,35 +125,35 @@ export const translationEN = {
       "Call for artists explained": "We are calling out all artists and creatives that want to contribute to the growth of Ethereum security, the home of most circulating NFTs, by creating unique digital art. Joining this effort will be incentivized by Hats Finance. Apply for the Hats NFT artist program using this form.",
     }
   },
-  Gamification: {
-    "Gamification": "Gamification",
-    "gamification-vault": "GAMIFICATION VAULT",
-    "game-launch": "TO GAME #1 LAUNCH",
+  GamificationRoute: {
     TabController: {
+      challenges: "CHALLENGES",
       about: "WHAT IT'S ALL ABOUT",
       game: "GAME #1",
       leaderBoard: "LEADERBOARD"
     },
-    About: {
-      "title-1": "ABOUT",
-      "text-1": "The Hats.Finance Gamification Vault offers a bounty for a Capture-the-flag competition. If you find the flag first and play by the rules, you will be rewarded with the highest prize. Finding a vulnerability is not an easy game. Hats.Finance is a decentralized bug bounty marketplace that desires to give hackers and auditors their fair share for their outstanding work in our space. \n\n For us, you are Heros! \n Go to our dApp and hunt vulnerabilities.",
-      "title-2": "A REWARDING TEST GROUND",
-      "text-2": "When you test your abilities in a smart contract that is known to contain a vulnerability, you know that you have to be at your best in order to be the first to find it. Once the winner is announced, a postmortem will be released, and you can check where you could have done better.",
-      "title-3": "Hats Games",
-      "text-3": "We plan to write a new contract every two months (or less) to allow new and veteran security researchers and hackers to go wild—a competition where you can earn a reward while battle testing Hats’ decentralized bug bounty platform. With an additional chance to get a unique NFT that will be used as an access token to private hacker groups on Hats for each one of the first 10 to report the issue.",
-      "btn-1": "CHECK OUT GAME#1"
-    },
-    Game: {
-      "title-1": "GAME #1",
-      "sub-title-1": "Task: Capture the Flag",
-      "text-1": "Game.sol encodes a card fighting game where the goal is to obtain the flag by pitching your deck of Mons against the deck of the flagholder and win the fight. \n\n --> Anyone can join the game calling game.join() \n\n --> On joining, a player receives a deck of 3 pseudo-random Mons. \n\n --> Each Mon is an NFT, and each Mon has powers: FIRE; WATER; AIR and SPEED, each with a value in a range from [0,9]. \n\n --> Users can try to improve their deck by swapping their Mons with other users, or by exchanging a Mon for a randomly generated new one. \n\n --> For a swap to succeed, another player must put one of their Mons for sale. \n\n --> At each moment, one player holds the flag. \n\n --> A fight between two Mons takes place with one of the 3 elements (FIRE, WATER or AIR). The Mon with the highest value in that element wins the fight. If the two Mons have the same strength, the Mon with the most SPEED wins. If the two Mons are excatly the same, the flag holder wins. \n\n --> A fight between two decks consists of pairing the three Mons of the challenger with the 3 Mons of the flag holder, pseudo-randomly choosing 3 elements, and then having the 3 pairs fight in each of these elements. \n\n",
-      "sub-title-2": "The Hats Challenge",
-      "text-2": "--> Obtain the flag: i.e. game.flagHolder() should return an address that you control.",
-      "title-3": "PRIZES",
-      "text-3": "Go to Hats dApp and find the vulnerability in the Gamification smart contract. \n\n Submit your finding in the dApp and win the prizes:  \n\n 1st place: 10,000 DAI & NFT \n\n 2nd place - 99:  NFT"
+    Challenges: {
+      CTF1: {
+        "title-1": "CAPTURE THE FLAG: POSTMORTEM",
+        "text-1": "Our first Capture The Flag event recently came to an end. It was a great success! \n\n Beginning May 1st and continuing until May 10th, in total we received 11 submissions that qualified for the challenge. These submissions were of such a high quality they got us thinking about how we can potentially partner with some of these security pros in the future. \n\n That said, we are delighted to announce that the first submitter, Kevin Charm, took the first prize of 10,000 DAI home. Other participants that submitted in time and correctly received an NFT and $500 USDC reward. While this latter reward was not initially planned, we were so impressed by the quality of the submissions we made the decision to honor the submitters’ great work. \n\n This challenge was fun, engaging, and brought us insights from participants that will ensure our future challenges will be even more effective. \n\n In this post we will go over the vault vulnerability, the winner’s submission, what we did well in this challenge, and things we will incorporate in our future challenges. \n\n Finding the vulnerability \n\n The first Hats CTF challenge was a simple card fighting game. The goal was to capture the flag by pitching your deck of Mons against the deck of the flag holder. The catch? The game was set up to be unwinnable: the deck of the flag holder consisted entirely of Mons that were unbeatable according to the rules of the game. \n\n The main exploitable vulnerability was hidden in the “swap” function, where two Mons are exchanged by two subsequent “safeTransfer’’ calls. The safeTransfer calls are inherited from OpenZeppelin’s ERC721 implementation, which (as the standard requires) tries to call a callback function on the receiver of the token. An attacker could exploit this callback function by creating a receiver contract that re-enters the game contract when only one leg of the swap is completed, and the attacker has received the counterparty’s mon from the swap, but not yet transferred her own. \n\n To capture the flag, several iterations of reentrancy had to be implemented. Almost all submissions were of very high quality, many of them providing implementations of a working demo, and a write-up of the approach. \n\n As the challenge occurred, we observed the following… \n\n We got many amazing entries, but only one was the first \n\n Most of the entries we received were correct and overall great, which from a content perspective makes it really hard to choose a winner. Given the parity of quality submissions, we thought it made sense to make the first correct entry the winner. For future challenges, we might consider adding extra rules and guidelines that allow non-first entries to be the winner if they excel relative to our stated criteria. \n\n Clarity over length \n\n The entries that stand apart from the rest are not the ones that are the longest. Instead those that are clear, seamless, easy to understand and accompanied with a good POC were the real standouts. \n\n Finding more than one vulnerability \n\n During the challenge, we had one entry that in addition to writing a correct response, also brought up other problems with the contract and the game. One of them was a bug that we did not think of at first. This speaks of the creativity and talent that exists within the security research community. We welcome entries that think outside the box, and provide different perspectives. \n\n Our thanks \n\n We want to thank all submitters to our first CTF for joining us in our first game. We would also like to thank blockchain security researchers in general. You are the true heroes of web3, for helping to keep the space secure and creating a more trustworthy ecosystem. \n\n This will not be the last challenge, as we intend to create more CTFs \n\n Best, \n\n Hats Team"
+      },
+      CTF2: {
+        "title-1": "ABOUT",
+        "text-1": "The Hats.Finance Gamification Vault offers a bounty for a Capture-the-flag competition. If you find the flag first and play by the rules, you will be rewarded with the highest prize. Finding a vulnerability is not an easy game. Hats.Finance is a decentralized bug bounty marketplace that desires to give hackers and auditors their fair share for their outstanding work in our space. \n\n For us, you are Heros! \n Go to our dApp and hunt vulnerabilities.",
+        "title-2": "A REWARDING TEST GROUND",
+        "text-2": "When you test your abilities in a smart contract that is known to contain a vulnerability, you know that you have to be at your best in order to be the first to find it. Once the winner is announced, a postmortem will be released, and you can check where you could have done better.",
+        "title-3": "Hats Games",
+        "text-3": "We plan to write a new contract every two months (or less) to allow new and veteran security researchers and hackers to go wild—a competition where you can earn a reward while battle testing Hats’ decentralized bug bounty platform. With an additional chance to get a unique NFT that will be used as an access token to private hacker groups on Hats for each one of the first 10 to report the issue.",
+        "button-1": "CHECKOUT CTF #2"
+      }
     },
     LeaderBoard: {
       "coming-soon": "Coming soon"
     }
+  },
+  Gamification: {
+    "Gamification": "Gamification",
+    "gamification-vault": "GAMIFICATION VAULT",
+    "game-launch": "TO GAME #1 LAUNCH",
   }
 }
