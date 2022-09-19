@@ -18,7 +18,8 @@ export const translationEN = {
   "NFT": "NFT",
   "Artist": "Artist",
   Header: {
-    "new": "NEW"
+    "new": "NEW",
+    "challenges": "Challenges"
   },
   AirdropBar: {
     "text-1": "NEW",
@@ -125,7 +126,7 @@ export const translationEN = {
       "Call for artists explained": "We are calling out all artists and creatives that want to contribute to the growth of Ethereum security, the home of most circulating NFTs, by creating unique digital art. Joining this effort will be incentivized by Hats Finance. Apply for the Hats NFT artist program using this form.",
     }
   },
-  GamificationRoute: {
+  ChallengesRoute: {
     TabController: {
       challenges: "CHALLENGES",
       about: "WHAT IT'S ALL ABOUT",
@@ -152,7 +153,6 @@ export const translationEN = {
     }
   },
   Gamification: {
-    "Gamification": "Gamification",
     "gamification-vault": "GAMIFICATION VAULT",
     "game-launch": "TO GAME #1 LAUNCH",
   }

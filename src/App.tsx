@@ -40,7 +40,7 @@ function App() {
           <Route path={RoutePaths.NFT}>
             <NFT />
           </Route>
-          <Route path={RoutePaths.Gamification}>
+          <Route path={RoutePaths.Challenges}>
             <Gamification />
           </Route>
         </Switch>

@@ -26,10 +26,6 @@ export default function TheHacker() {
             <img src={require("../../../../assets/icons/landing/bug.svg").default} alt="bug" />
             <span>{t("Landing.Hacker.text-2")}</span>
           </div>
-          {/* <div className="the-hacker-advantage-element">
-            <img src={require("../../../../assets/icons/landing/dispute.svg").default} alt="dispute" />
-            <span>{t("Landing.Hacker.text-3")}</span>
-          </div> */}
           <div className="the-hacker-advantage-element">
             <img src={require("../../../../assets/icons/landing/nft.svg").default} alt="nft" />
             <span>{t("Landing.Hacker.text-4")}</span>

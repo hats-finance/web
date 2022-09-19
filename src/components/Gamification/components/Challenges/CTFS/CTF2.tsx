@@ -9,18 +9,18 @@ export default function CTF2(){
   return (
     <div className="ctf-2-wrapper">
       <section>
-        <div className="title">{t("GamificationRoute.Challenges.CTF2.title-1")}</div>
-        <div>{t("GamificationRoute.Challenges.CTF2.text-1")}</div>
+        <div className="title">{t("ChallengesRoute.Challenges.CTF2.title-1")}</div>
+        <div>{t("ChallengesRoute.Challenges.CTF2.text-1")}</div>
       </section>
       <section>
-        <div className="title">{t("GamificationRoute.Challenges.CTF2.title-2")}</div>
-        <div>{t("GamificationRoute.Challenges.CTF2.text-2")}</div>
+        <div className="title">{t("ChallengesRoute.Challenges.CTF2.title-2")}</div>
+        <div>{t("ChallengesRoute.Challenges.CTF2.text-2")}</div>
       </section>
       <section>
-        <div className="title">{t("GamificationRoute.Challenges.CTF2.title-3")}</div>
-        <div>{t("GamificationRoute.Challenges.CTF2.text-3")}</div>
+        <div className="title">{t("ChallengesRoute.Challenges.CTF2.title-3")}</div>
+        <div>{t("ChallengesRoute.Challenges.CTF2.text-3")}</div>
       </section>
-      <button className="button ctf-2-button" onClick={() => window.open(CTF2_LINK)}>{t("GamificationRoute.Challenges.CTF2.button-1")}</button>
+      <button className="button ctf-2-button" onClick={() => window.open(CTF2_LINK)}>{t("ChallengesRoute.Challenges.CTF2.button-1")}</button>
     </div>
   )
 }

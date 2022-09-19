@@ -30,8 +30,8 @@ export default function TabsController({ currentTab, setCurrentTab }: IProps) {
 
   return (
     <div ref={tabsWrapperElement} className="gamification-tabs-controller-wrapper">
-      <div className={`tab ${currentTab === Tab.Challenges && "selected"}`} onClick={() => handleClick(Tab.Challenges)}>{t("GamificationRoute.TabController.challenges")}</div>
-      <div className={`tab ${currentTab === Tab.LeaderBoard && "selected"}`} onClick={() => handleClick(Tab.LeaderBoard)}>{t("GamificationRoute.TabController.leaderBoard")}</div>
+      <div className={`tab ${currentTab === Tab.Challenges && "selected"}`} onClick={() => handleClick(Tab.Challenges)}>{t("ChallengesRoute.TabController.challenges")}</div>
+      <div className={`tab ${currentTab === Tab.LeaderBoard && "selected"}`} onClick={() => handleClick(Tab.LeaderBoard)}>{t("ChallengesRoute.TabController.leaderBoard")}</div>
     </div >
   )
 }
