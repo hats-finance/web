@@ -47,7 +47,7 @@ export default function Gamification() {
   return (
     <div className="gamification-wrapper">
       <div className="gamification__banner-container">
-        <img src={screenSize === ScreenSize.Desktop ? CTFDesktopCover : CTFMobileCover} alt="banner" />
+        <img className="gamification__banner" src={screenSize === ScreenSize.Desktop ? CTFDesktopCover : CTFMobileCover} alt="banner" />
         {startTime && endTime && moment().isBefore(moment.unix(endTime)) && (
           <div className={classNames("countdown-container", { "live": moment().isAfter(moment.unix(startTime)) })}>
             <span>{t("ChallengesRoute.Gamification.ctf-2")}</span>

@@ -6,6 +6,9 @@
   padding: $header-height 0;
   .gamification__banner-container {
     position: relative;
+    .gamification__banner {
+      width: 100%;
+    }
     .countdown-container {
       position: absolute;
       width: 200px;
