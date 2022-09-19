@@ -127,6 +127,11 @@ export const translationEN = {
     }
   },
   ChallengesRoute: {
+    Gamification: {
+      "ctf-2": "CTF#2",
+      "to-launch": "TO LAUNCH",
+      "is-live": "IS LIVE"
+    },
     TabController: {
       challenges: "CHALLENGES",
       about: "WHAT IT'S ALL ABOUT",
@@ -151,9 +156,5 @@ export const translationEN = {
     LeaderBoard: {
       "coming-soon": "Coming soon"
     }
-  },
-  Gamification: {
-    "gamification-vault": "GAMIFICATION VAULT",
-    "game-launch": "TO GAME #1 LAUNCH",
   }
 }

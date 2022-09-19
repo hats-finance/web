@@ -3,7 +3,7 @@
 .countdown-wrapper {
   display: flex;
   .time-element {
-    color: $white;
+    color: inherit;
     .value {
       font-size: $xlarge;
     }
@@ -14,7 +14,7 @@
   .countdown-wrapper {
     .time-element {
       .value {
-        font-size: $tiny;
+        font-size: $xxxsmall;
       }
     }
   }
