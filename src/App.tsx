@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
@@ -10,7 +10,6 @@ import { Route, Switch, useLocation } from "react-router-dom";
 import useModal from "./hooks/useModal";
 import Modal from './components/Shared/Modal/Modal';
 import AirdropPrompt from './components/NFT/components/AirdropPrompt/AirdropPrompt';
-import AirdropBar from "./components/NFT/components/AirdropBar/AirdropBar";
 
 export const LayoutContext = React.createContext({ screenSize: "" });
 
@@ -24,14 +23,15 @@ function App() {
     setScreenSize(screenSize.matches ? ScreenSize.Desktop : ScreenSize.Mobile);
   });
 
-  useEffect(() => {
-    toggleAirdropPrompt();
-  }, [])
+  /** Temporary disable */
+  // useEffect(() => {
+  //   toggleAirdropPrompt();
+  // }, [])
 
   return (
     <LayoutContext.Provider value={{ screenSize: screenSize }}>
       <div className="app-wrapper">
-        {!location.pathname.includes(RoutePaths.NFT) && <AirdropBar />}
+        {/* {!location.pathname.includes(RoutePaths.NFT) && <AirdropBar />} */}
         <Header />
         <Switch>
           <Route path="/" exact>
