@@ -25,7 +25,8 @@ function App() {
   });
 
   useEffect(() => {
-    toggleAirdropPrompt();
+    window.addEventListener("load", toggleAirdropPrompt);
+    return () => window.removeEventListener("load", toggleAirdropPrompt)
   }, [])
 
   return (
