@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './App.scss';
 import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
@@ -24,11 +24,14 @@ function App() {
     setScreenSize(screenSize.matches ? ScreenSize.Desktop : ScreenSize.Mobile);
   });
 
-  /** Temporary disable */
+  const openAirdropPrompt = useCallback(() => {
+    setTimeout(toggleAirdropPrompt, 1000);
+  }, [toggleAirdropPrompt])
+
   useEffect(() => {
-    window.addEventListener("load", toggleAirdropPrompt);
-    return () => window.removeEventListener("load", toggleAirdropPrompt)
-  }, [])
+    window.addEventListener("load", openAirdropPrompt);
+    return () => window.removeEventListener("load", openAirdropPrompt)
+  }, [openAirdropPrompt])
 
   return (
     <LayoutContext.Provider value={{ screenSize: screenSize }}>
