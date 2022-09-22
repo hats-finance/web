@@ -12,6 +12,7 @@ import EmbassyBanner from "../../assets/images/nft/embassy-banner.svg";
 import EmbassyBannerMobile from "../../assets/images/nft/embassy-banner-mobile.svg";
 import CrowClanBanner from "../../assets/images/nft/crow-clan-banner.gif";
 import CrowClanBannerMobile from "../../assets/images/nft/crow-clan-banner-mobile.gif";
+import EmbassyCollection from "./components/EmbassyCollection/EmbassyCollection";
 
 export enum Tab {
   EmbassyCollection,
@@ -21,12 +22,14 @@ export enum Tab {
 }
 
 export default function NFT() {
-  const [currentTab, setCurrentTab] = useState(Tab.Airdrop);
+  const [currentTab, setCurrentTab] = useState(Tab.EmbassyCollection);
   const { screenSize } = useContext(LayoutContext);
   const { t } = useTranslation();
 
   const renderContent = (currentTab: Tab) => {
     switch (currentTab) {
+      case Tab.EmbassyCollection:
+        return <EmbassyCollection />;
       case Tab.Airdrop:
         return <Airdrop />;
       case Tab.Collections:

@@ -23,12 +23,12 @@ export default function Header() {
   const links = <div className="links-wrapper">
     <NavLink to={RoutePaths.Challenges} onClick={() => setToggleMenu(false)} activeClassName="selected">{t("Header.challenges")}</NavLink>
     <NavLink to={RoutePaths.NFT} onClick={() => setToggleMenu(false)} className="links__nft" activeClassName="selected">
-      {/* {!hasSeenNft && (
+      {!hasSeenNft && (
         <div className="links__nft-new">
           <div className="links__dot" />
           {t("Header.new")}
         </div>
-      )} */}
+      )}
       {t("NFT")}
     </NavLink>
     <a target="_blank" rel="noopener noreferrer" href={GIT_BOOK}>{t("Docs")}</a>
