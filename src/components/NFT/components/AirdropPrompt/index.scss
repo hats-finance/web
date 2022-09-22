@@ -1,0 +1,66 @@
+@import "../../../../constants/constants.scss";
+
+.airdrop-prompt-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 30px 30px;
+  overflow-x: hidden;
+  align-items: center;
+  .airdrop-prompt__new {
+    color: $white;
+    display: flex;
+    align-items: center;
+    font-family: SegoeUI-bold;
+    align-self: flex-start;
+    margin-left: 15px;
+    .airdrop-prompt__new__dot {
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: $red-1;
+      margin-right: 6px;
+    }
+  }
+  .airdrop-prompt__title {
+    color: $green-1;
+    font-size: $large;
+    font-family: SegoeUI-bold;
+    letter-spacing: 1px;
+  }
+  .airdrop-prompt__nft-example {
+    align-self: center;
+  }
+  .airdrop-prompt__to-airdrop-machine-btn {
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    align-self: center;
+    background-color: $green-1;
+    color: $deep-blue;
+    font-family: SegoeUI-bold;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .airdrop-prompt-wrapper {
+    height: 90%;
+    padding-bottom: 0;
+    .airdrop-prompt__new {
+      margin-left: unset;
+      font-size: $xsmall;
+      .airdrop-prompt__new__dot {
+        border-radius: 15px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    .airdrop-prompt__title {
+      font-size: $medium;
+    }
+  }
+}

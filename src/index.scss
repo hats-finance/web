@@ -5,8 +5,23 @@
   src: url(./assets/fonts/Segoe-UI.ttf);
 }
 
+@font-face {
+  font-family: SegoeUI-bold;
+  src: url(./assets/fonts/Segoe-UI-bold.ttf);
+}
+
 html {
   background-color: $deep-blue;
+  -webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  ::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
 }
 
 body {

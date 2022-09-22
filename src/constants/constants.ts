@@ -8,6 +8,10 @@ export enum ScreenSize {
   Desktop = "DESKTOP"
 }
 
+export enum LocalStorage {
+  NewNft = "HATS_HAS_SEEN_NFT"
+}
+
 export const SMALL_SCREEN_BREAKPOINT = "770px";
 
 export const DAPP_LINK = "https://app.hats.finance";

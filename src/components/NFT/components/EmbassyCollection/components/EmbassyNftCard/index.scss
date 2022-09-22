@@ -1,0 +1,86 @@
+@import "../../../../../../constants/constants.scss";
+
+.embassy-nft-card-wrapper {
+  border: 1px solid $blue-2;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  img {
+    width: -webkit-fill-available;
+    padding: 20px;
+  }
+  .embassy-nft-card__info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    border-top: 1px solid $blue-3;
+    box-sizing: border-box;
+    .embassy-nft-card__info-title {
+      color: $white;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .embassy-nft-card__info-element {
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+      .embassy-nft-card__info-element-title {
+        color: $turquoise-2;
+        font-size: $xxsmall;
+        font-style: italic;
+      }
+      .embassy-nft-card__info-element-value {
+        text-transform: capitalize;
+        color: $white;
+      }
+    }
+  }
+}
+
+.embassy-nft-card-full-screen-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  .embassy-nft-card-full-screen__close-btn {
+    border: none;
+    color: $white;
+    margin-left: auto;
+    font-size: $medium;
+    background-color: $black;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .embassy-nft-card-full-screen__container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    img {
+      max-height: 85vh;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .embassy-nft-card-full-screen-wrapper {
+    .embassy-nft-card-full-screen__container {
+      img {
+        max-height: 80vh;
+      }
+    }
+  }
+}

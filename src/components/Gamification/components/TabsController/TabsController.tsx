@@ -31,7 +31,7 @@ export default function TabsController({ currentTab, setCurrentTab }: IProps) {
   }
 
   return (
-    <div ref={tabsWrapperElement} className="tabs-controller-wrapper">
+    <div ref={tabsWrapperElement} className="gamification-tabs-controller-wrapper">
       <div className={`tab ${currentTab === Tab.About && "selected"}`} onClick={() => handleClick(Tab.About)}>{t("Gamification.TabController.about")}</div>
       {/* <div className={`tab ${currentTab === Tab.Game && "selected"}`} onClick={() => handleClick(Tab.Game)}>{t("Gamification.TabController.game")}</div> */}
       <div className={`tab ${currentTab === Tab.LeaderBoard && "selected"}`} onClick={() => handleClick(Tab.LeaderBoard)}>{t("Gamification.TabController.leaderBoard")}</div>

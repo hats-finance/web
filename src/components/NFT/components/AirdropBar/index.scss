@@ -1,0 +1,53 @@
+@import "../../../../constants/constants.scss";
+
+.airdrop-bar-wrapper {
+  background-color: $blue-5;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  .airdrop-bar__text-container {
+    display: flex;
+    flex-direction: column;
+    color: $green-1;
+    font-size: $medium;
+    font-weight: bold;
+    .airdrop-bar__text-container__new-label {
+      display: flex;
+      align-items: center;
+      color: $white;
+      font-size: $xxxsmall;
+      .airdrop-bar__text-container__new-label__dot {
+        border-radius: 10px;
+        width: 10px;
+        height: 10px;
+        background-color: $red-1;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .airdrop-bar__go-to-nft-btn {
+    color: $deep-blue;
+    background-color: $green-1;
+    width: 140px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 20px;
+    align-self: flex-end;
+    font-family: SegoeUI-bold;
+  }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+  .airdrop-bar-wrapper {
+    .airdrop-bar__text-container {
+      font-size: $xsmall;
+    }
+    .airdrop-bar__go-to-nft-btn {
+      width: 120px;
+    }
+  }
+}
