@@ -1,15 +1,16 @@
 
 import { useState, useEffect, useCallback } from "react";
 import moment from "moment";
+import classNames from "classnames";
 import "./index.scss";
 
 interface IProps {
   endDate: string
-  onEnd?: Function
+  onEnd?: () => void,
+  className?: string
 }
 
-export default function Countdown(props: IProps) {
-  const { endDate, onEnd } = props;
+export default function Countdown({ endDate, onEnd, className }: IProps) {
   const countdownDate = moment.unix(Number(endDate)).utc().valueOf();
   const [timer, setTimer] = useState({
     days: 0,
@@ -67,7 +68,7 @@ export default function Countdown(props: IProps) {
   }, [setNewTime]);
 
   return (
-    <div className="countdown-wrapper" >
+    <div className={classNames("countdown-wrapper", className)}  >
       {timer.days > 0 && (
         <div className="time-element">
           <span className="value">{timer.days || '00'}:</span>

@@ -20,10 +20,8 @@ export default function TabsController({ currentTab, setCurrentTab }: IProps) {
     if (screenSize === ScreenSize.Mobile) {
       const maxLeftScroll = tabsWrapperElement.current?.clientWidth - tabsWrapperElement.current?.scrollWidth;
       switch (tab) {
-        case Tab.About:
+        case Tab.Challenges:
           return tabsWrapperElement.current.scrollLeft = maxLeftScroll;
-        // case Tab.Game:
-        //   return tabsWrapperElement.current.scrollLeft = -maxLeftScroll / 2;
         case Tab.LeaderBoard:
           return tabsWrapperElement.current.scrollLeft = -maxLeftScroll;
       }
@@ -32,9 +30,8 @@ export default function TabsController({ currentTab, setCurrentTab }: IProps) {
 
   return (
     <div ref={tabsWrapperElement} className="gamification-tabs-controller-wrapper">
-      <div className={`tab ${currentTab === Tab.About && "selected"}`} onClick={() => handleClick(Tab.About)}>{t("Gamification.TabController.about")}</div>
-      {/* <div className={`tab ${currentTab === Tab.Game && "selected"}`} onClick={() => handleClick(Tab.Game)}>{t("Gamification.TabController.game")}</div> */}
-      <div className={`tab ${currentTab === Tab.LeaderBoard && "selected"}`} onClick={() => handleClick(Tab.LeaderBoard)}>{t("Gamification.TabController.leaderBoard")}</div>
+      <div className={`tab ${currentTab === Tab.Challenges && "selected"}`} onClick={() => handleClick(Tab.Challenges)}>{t("ChallengesRoute.TabController.challenges")}</div>
+      <div className={`tab ${currentTab === Tab.LeaderBoard && "selected"}`} onClick={() => handleClick(Tab.LeaderBoard)}>{t("ChallengesRoute.TabController.leaderBoard")}</div>
     </div >
   )
 }

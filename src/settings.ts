@@ -1,0 +1,1 @@
+export const CTF_VAULT_IPFS = process.env.REACT_APP_CTF_VAULT_IPFS;

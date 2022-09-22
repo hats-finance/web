@@ -8,11 +8,11 @@ import { LayoutContext } from "../../App";
 import { useTranslation } from "react-i18next";
 import SocialLinksPanel from "../SocialLinksPanel/SocialLinksPanel";
 import './index.scss';
-import EmbassyCollection from "./components/EmbassyCollection/EmbassyCollection";
 import EmbassyBanner from "../../assets/images/nft/embassy-banner.svg";
 import EmbassyBannerMobile from "../../assets/images/nft/embassy-banner-mobile.svg";
 import CrowClanBanner from "../../assets/images/nft/crow-clan-banner.gif";
 import CrowClanBannerMobile from "../../assets/images/nft/crow-clan-banner-mobile.gif";
+import EmbassyCollection from "./components/EmbassyCollection/EmbassyCollection";
 
 export enum Tab {
   EmbassyCollection,

@@ -21,7 +21,7 @@ export default function Header() {
   }, [location])
 
   const links = <div className="links-wrapper">
-    <NavLink to={RoutePaths.Gamification} onClick={() => setToggleMenu(false)} activeClassName="selected">{t("Gamification.Gamification")}</NavLink>
+    <NavLink to={RoutePaths.Challenges} onClick={() => setToggleMenu(false)} activeClassName="selected">{t("Header.challenges")}</NavLink>
     <NavLink to={RoutePaths.NFT} onClick={() => setToggleMenu(false)} className="links__nft" activeClassName="selected">
       {!hasSeenNft && (
         <div className="links__nft-new">

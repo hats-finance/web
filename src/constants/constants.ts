@@ -1,6 +1,6 @@
 export enum RoutePaths {
   NFT = "/nft",
-  Gamification = "/gamification"
+  Challenges = "/challenges"
 }
 
 export enum ScreenSize {
@@ -40,4 +40,13 @@ export enum SocialLinks {
   GitHub = "https://github.com/hats-finance",
   Medium = "https://medium.com/@HatsFinance",
   Telegram = "https://t.me/joinchat/QKP3HcdosVhjOTY0"
+}
+
+/** This is used when we need to set colors via the JavaScript */
+export enum Colors {
+  turquoise_1 = "#9BC8CA",
+  turquoise_2 = "#8AFCFD",
+  white = "#FFFFFF",
+  blue_1 = "#2C1A61",
+  blue_2 = "#17044F"
 }

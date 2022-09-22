@@ -6,7 +6,7 @@ export default function LeaderBoard() {
 
   return (
     <div className="leader-board-wrapper">
-      <span>{t("Gamification.LeaderBoard.coming-soon")}</span>
+      <span>{t("ChallengesRoute.LeaderBoard.coming-soon")}</span>
     </div>
   )
 }

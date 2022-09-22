@@ -1,14 +1,14 @@
 @import "../../constants/constants.scss";
 
 .nft-wrapper {
-  display: flex;
-  flex-direction: column;
   padding: $header-height 0;
   .banner {
     width: 100%;
   }
   .nft-content {
     padding: $element-padding;
+    max-width: 700px;
+    margin: auto;
     section {
       display: flex;
       flex-direction: column;
