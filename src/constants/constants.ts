@@ -1,15 +1,16 @@
 export enum RoutePaths {
   NFT = "/nft",
-  Challenges = "/challenges"
+  Challenges = "/challenges",
 }
 
 export enum ScreenSize {
   Mobile = "MOBILE",
-  Desktop = "DESKTOP"
+  Desktop = "DESKTOP",
 }
 
 export enum LocalStorage {
-  NewNft = "HATS_HAS_SEEN_NFT"
+  NewNft = "HATS_HAS_SEEN_NFT",
+  AirdropPrompt = "HATS_HAS_SEEN_AIRDROP_PROMPT",
 }
 
 export const SMALL_SCREEN_BREAKPOINT = "770px";
@@ -39,7 +40,7 @@ export enum SocialLinks {
   Twitter = "https://twitter.com/HatsFinance",
   GitHub = "https://github.com/hats-finance",
   Medium = "https://medium.com/@HatsFinance",
-  Telegram = "https://t.me/joinchat/QKP3HcdosVhjOTY0"
+  Telegram = "https://t.me/joinchat/QKP3HcdosVhjOTY0",
 }
 
 /** This is used when we need to set colors via the JavaScript */
@@ -48,5 +49,5 @@ export enum Colors {
   turquoise_2 = "#8AFCFD",
   white = "#FFFFFF",
   blue_1 = "#2C1A61",
-  blue_2 = "#17044F"
+  blue_2 = "#17044F",
 }
