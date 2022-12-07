@@ -39,7 +39,7 @@ function App() {
   return (
     <LayoutContext.Provider value={{ screenSize: screenSize }}>
       <div className="app-wrapper">
-        {!location.pathname.includes(RoutePaths.NFT) && <AirdropBar />}
+        {/* {!location.pathname.includes(RoutePaths.NFT) && <AirdropBar />} */}
         <Header />
         <Switch>
           <Route path="/" exact>
@@ -52,14 +52,14 @@ function App() {
             <Gamification />
           </Route>
         </Switch>
-        <Modal
+        {/* <Modal
           isShowing={showAirdropPrompt}
           hide={() => {
             toggleAirdropPrompt();
             localStorage.setItem(LocalStorage.AirdropPrompt, "true");
           }}>
           <AirdropPrompt closeModal={toggleAirdropPrompt} />
-        </Modal>
+        </Modal> */}
       </div>
     </LayoutContext.Provider>
   );
