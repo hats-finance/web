@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
 import NFT from "./components/NFT/NFT";
 import Gamification from "./components/Gamification/Gamification";
+import AuditFirms from "./components/AuditFirms/AuditFirms";
 import { SMALL_SCREEN_BREAKPOINT, ScreenSize, RoutePaths, LocalStorage } from "./constants/constants";
 import { getScreenSize } from "./utils";
 import { Route, Switch, useLocation } from "react-router-dom";
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path={RoutePaths.Challenges}>
             <Gamification />
+          </Route>
+          <Route path={RoutePaths.AuditFirms}>
+            <AuditFirms />
           </Route>
         </Switch>
         {/* <Modal

@@ -1,0 +1,65 @@
+@import "../../constants/constants.scss";
+
+.audit-firms {
+  padding-top: $header-height;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner img {
+    width: 100%;
+    object-fit: cover;
+
+    @media (max-width: 800px) {
+      height: 300px;
+    }
+
+    @media (max-width: 660px) {
+      height: 220px;
+    }
+  }
+
+  .content {
+    padding: $element-padding;
+    color: $white;
+    max-width: 700px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    line-height: 24px;
+
+    strong {
+      font-family: SegoeUI-bold;
+    }
+
+    .title {
+      text-transform: uppercase;
+      font-size: $medium;
+      letter-spacing: 2px;
+      font-family: SegoeUI-bold;
+      margin-bottom: 20px;
+    }
+
+    .firms {
+      width: 100%;
+      margin-top: 100px;
+      display: grid;
+      gap: 80px 20px;
+      grid-template-columns: 1fr 1fr;
+
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      .firm {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
