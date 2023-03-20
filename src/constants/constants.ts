@@ -1,6 +1,7 @@
 export enum RoutePaths {
   NFT = "/nft",
   Challenges = "/challenges",
+  AuditFirms = "/audit-firms",
 }
 
 export enum ScreenSize {
